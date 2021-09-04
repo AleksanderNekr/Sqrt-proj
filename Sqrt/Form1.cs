@@ -23,12 +23,15 @@ namespace Sqrt
             try
             {
                 var number = Convert.ToDouble(NumberText);
-                var result = Math.Sqrt(number);
-                textBox.Text = result.ToString(CultureInfo.CurrentCulture);
+                
+                textBox.Text = number > -1 ? 
+                    Math.Sqrt(number).ToString() :
+                    Math.Sqrt(number * (-1)).ToString() + 'i';
+
             }
             catch (Exception)
             {
-                textBox.Text = "Введите число, не строку!";
+                textBox.Text = "Ошибка! Введите число, не строку!";
             }
             
 
