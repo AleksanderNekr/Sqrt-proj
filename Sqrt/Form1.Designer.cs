@@ -27,8 +27,9 @@ namespace Sqrt
             this.textBox = new System.Windows.Forms.TextBox();
             this.SQRT = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
-            this.numsAfterDot = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.numsAfterDot = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox
@@ -62,31 +63,30 @@ namespace Sqrt
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
-            // numsAfterDot
-            // 
-            this.numsAfterDot.Location = new System.Drawing.Point(13, 186);
-            this.numsAfterDot.Name = "numsAfterDot";
-            this.numsAfterDot.Size = new System.Drawing.Size(53, 23);
-            this.numsAfterDot.TabIndex = 3;
-            this.numsAfterDot.Text = "10";
-            this.numsAfterDot.TextChanged += new System.EventHandler(this.numsAfterDot_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 189);
+            this.label1.Location = new System.Drawing.Point(62, 189);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 15);
             this.label1.TabIndex = 4;
             this.label1.Text = "Количество знаков после запятой";
+            // 
+            // numsAfterDot
+            // 
+            this.numsAfterDot.Location = new System.Drawing.Point(13, 187);
+            this.numsAfterDot.Name = "numsAfterDot";
+            this.numsAfterDot.Size = new System.Drawing.Size(43, 23);
+            this.numsAfterDot.TabIndex = 5;
+            this.numsAfterDot.ValueChanged += new System.EventHandler(this.numsAfterDot_ValueChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 301);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.numsAfterDot);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SQRT);
             this.Controls.Add(this.textBox);
@@ -95,6 +95,7 @@ namespace Sqrt
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,8 +106,8 @@ namespace Sqrt
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button SQRT;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.TextBox numsAfterDot;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numsAfterDot;
     }
 }
 

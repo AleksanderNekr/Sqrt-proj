@@ -44,9 +44,10 @@ namespace Sqrt
         {
             textBox.Text = "";
         }
-
-        private void numsAfterDot_TextChanged(object sender, EventArgs e)
+        
+        private void numsAfterDot_ValueChanged(object sender, EventArgs e)
         {
+
         }
     }
 }
