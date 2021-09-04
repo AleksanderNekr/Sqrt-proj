@@ -23,18 +23,19 @@ namespace Sqrt
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox = new System.Windows.Forms.TextBox();
             this.SQRT = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox
             // 
-            this.textBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.textBox.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox.Location = new System.Drawing.Point(0, 260);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(584, 41);
+            this.textBox.Size = new System.Drawing.Size(523, 41);
             this.textBox.TabIndex = 0;
             this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -49,11 +50,22 @@ namespace Sqrt
             this.SQRT.UseVisualStyleBackColor = true;
             this.SQRT.Click += new System.EventHandler(this.button1_Click);
             // 
+            // ClearButton
+            // 
+            this.ClearButton.Image = ((System.Drawing.Image)(resources.GetObject("ClearButton.Image")));
+            this.ClearButton.Location = new System.Drawing.Point(529, 260);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(41, 41);
+            this.ClearButton.TabIndex = 2;
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 301);
+            this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SQRT);
             this.Controls.Add(this.textBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -70,6 +82,7 @@ namespace Sqrt
 
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button SQRT;
+        private System.Windows.Forms.Button ClearButton;
     }
 }
 
