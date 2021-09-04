@@ -29,6 +29,7 @@ namespace Sqrt
             this.ClearButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.numsAfterDot = new System.Windows.Forms.NumericUpDown();
+            this.ComplexSqrt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,12 +45,12 @@ namespace Sqrt
             // 
             // SQRT
             // 
-            this.SQRT.Font = new System.Drawing.Font("Segoe UI", 39F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.SQRT.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.SQRT.Location = new System.Drawing.Point(13, 13);
             this.SQRT.Name = "SQRT";
-            this.SQRT.Size = new System.Drawing.Size(559, 166);
+            this.SQRT.Size = new System.Drawing.Size(201, 166);
             this.SQRT.TabIndex = 1;
-            this.SQRT.Text = "Вывести корень из числа";
+            this.SQRT.Text = "Арифметический корень из числа";
             this.SQRT.UseVisualStyleBackColor = true;
             this.SQRT.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -75,7 +76,13 @@ namespace Sqrt
             // numsAfterDot
             // 
             this.numsAfterDot.Location = new System.Drawing.Point(13, 187);
+            this.numsAfterDot.Maximum = new decimal(new int[] {
+            15,
+            0,
+            0,
+            0});
             this.numsAfterDot.Name = "numsAfterDot";
+            this.numsAfterDot.ReadOnly = true;
             this.numsAfterDot.Size = new System.Drawing.Size(43, 23);
             this.numsAfterDot.TabIndex = 5;
             this.numsAfterDot.Value = new decimal(new int[] {
@@ -85,11 +92,22 @@ namespace Sqrt
             0});
             this.numsAfterDot.ValueChanged += new System.EventHandler(this.numsAfterDot_ValueChanged);
             // 
+            // ComplexSqrt
+            // 
+            this.ComplexSqrt.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ComplexSqrt.Location = new System.Drawing.Point(241, 12);
+            this.ComplexSqrt.Name = "ComplexSqrt";
+            this.ComplexSqrt.Size = new System.Drawing.Size(201, 166);
+            this.ComplexSqrt.TabIndex = 6;
+            this.ComplexSqrt.Text = "Комплексный корень из числа";
+            this.ComplexSqrt.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 301);
+            this.Controls.Add(this.ComplexSqrt);
             this.Controls.Add(this.numsAfterDot);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ClearButton);
@@ -113,6 +131,7 @@ namespace Sqrt
         private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numsAfterDot;
+        private System.Windows.Forms.Button ComplexSqrt;
     }
 }
 

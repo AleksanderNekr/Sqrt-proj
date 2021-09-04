@@ -24,12 +24,8 @@ namespace Sqrt
             try
             {
                 var number = Convert.ToDouble(NumberText);
-                
-                textBox.Text = number > -1 ? 
-                    Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text))
-                        .ToString() :
-                    Math.Round(Math.Sqrt(number * (-1)), int.Parse(numsAfterDot.Text))
-                        .ToString() + 'i';
+
+                textBox.Text = Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text)).ToString();
 
             }
             catch (Exception)
