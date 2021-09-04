@@ -28,7 +28,7 @@ namespace Sqrt
                 textBox.Text = number > -1 ? 
                     Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text))
                         .ToString() :
-                    Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text))
+                    Math.Round(Math.Sqrt(number * (-1)), int.Parse(numsAfterDot.Text))
                         .ToString() + 'i';
 
             }
