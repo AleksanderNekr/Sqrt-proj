@@ -41,6 +41,7 @@ namespace Sqrt
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(512, 41);
             this.textBox.TabIndex = 0;
+            this.textBox.Text = "0";
             this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // SQRT

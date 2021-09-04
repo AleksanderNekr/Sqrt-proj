@@ -38,7 +38,7 @@ namespace Sqrt
 
         private void ClearButton_Click(object sender, EventArgs e)
         {
-            textBox.Text = "";
+            textBox.Text = "0";
         }
         
         private void numsAfterDot_ValueChanged(object sender, EventArgs e)
