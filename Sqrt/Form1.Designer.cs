@@ -114,7 +114,7 @@ namespace Sqrt
             "中国人"});
             this.comboBox1.Location = new System.Drawing.Point(13, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(84, 23);
+            this.comboBox1.Size = new System.Drawing.Size(71, 23);
             this.comboBox1.TabIndex = 7;
             this.comboBox1.Text = "Язык";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
