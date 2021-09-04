@@ -23,20 +23,20 @@ namespace Sqrt
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox = new System.Windows.Forms.TextBox();
             this.SQRT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBox
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(0, 185);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(584, 116);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBox.Location = new System.Drawing.Point(0, 260);
+            this.textBox.Name = "textBox";
+            this.textBox.Size = new System.Drawing.Size(584, 41);
+            this.textBox.TabIndex = 0;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // SQRT
             // 
@@ -55,7 +55,7 @@ namespace Sqrt
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 301);
             this.Controls.Add(this.SQRT);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -68,7 +68,7 @@ namespace Sqrt
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button SQRT;
     }
 }
