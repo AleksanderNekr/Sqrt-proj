@@ -78,6 +78,11 @@ namespace Sqrt
             this.numsAfterDot.Name = "numsAfterDot";
             this.numsAfterDot.Size = new System.Drawing.Size(43, 23);
             this.numsAfterDot.TabIndex = 5;
+            this.numsAfterDot.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.numsAfterDot.ValueChanged += new System.EventHandler(this.numsAfterDot_ValueChanged);
             // 
             // Form1
