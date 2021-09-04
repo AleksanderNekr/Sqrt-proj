@@ -8,6 +8,7 @@ namespace Sqrt
     {
         public string SqrtSimple;
         public string NumberText;
+        public string roundedNum;
         public Form1()
         {
             InitializeComponent();
@@ -25,13 +26,15 @@ namespace Sqrt
                 var number = Convert.ToDouble(NumberText);
                 
                 textBox.Text = number > -1 ? 
-                    Math.Sqrt(number).ToString() :
-                    Math.Sqrt(number * (-1)).ToString() + 'i';
+                    Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text))
+                        .ToString() :
+                    Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text))
+                        .ToString() + 'i';
 
             }
             catch (Exception)
             {
-                textBox.Text = "Ошибка! Введите число, не строку!";
+                textBox.Text = "Ошибка!";
             }
             
 
@@ -40,6 +43,10 @@ namespace Sqrt
         private void ClearButton_Click(object sender, EventArgs e)
         {
             textBox.Text = "";
+        }
+
+        private void numsAfterDot_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }

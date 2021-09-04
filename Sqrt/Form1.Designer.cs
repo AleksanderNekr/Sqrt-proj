@@ -27,15 +27,17 @@ namespace Sqrt
             this.textBox = new System.Windows.Forms.TextBox();
             this.SQRT = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
+            this.numsAfterDot = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox
             // 
             this.textBox.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox.Location = new System.Drawing.Point(0, 260);
+            this.textBox.Location = new System.Drawing.Point(13, 254);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(523, 41);
+            this.textBox.Size = new System.Drawing.Size(512, 41);
             this.textBox.TabIndex = 0;
             this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -53,18 +55,38 @@ namespace Sqrt
             // ClearButton
             // 
             this.ClearButton.Image = ((System.Drawing.Image)(resources.GetObject("ClearButton.Image")));
-            this.ClearButton.Location = new System.Drawing.Point(529, 260);
+            this.ClearButton.Location = new System.Drawing.Point(531, 254);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(41, 41);
             this.ClearButton.TabIndex = 2;
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
+            // numsAfterDot
+            // 
+            this.numsAfterDot.Location = new System.Drawing.Point(13, 186);
+            this.numsAfterDot.Name = "numsAfterDot";
+            this.numsAfterDot.Size = new System.Drawing.Size(53, 23);
+            this.numsAfterDot.TabIndex = 3;
+            this.numsAfterDot.Text = "10";
+            this.numsAfterDot.TextChanged += new System.EventHandler(this.numsAfterDot_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(72, 189);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(194, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Количество знаков после запятой";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 301);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.numsAfterDot);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.SQRT);
             this.Controls.Add(this.textBox);
@@ -83,6 +105,8 @@ namespace Sqrt
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.Button SQRT;
         private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.TextBox numsAfterDot;
+        private System.Windows.Forms.Label label1;
     }
 }
 
