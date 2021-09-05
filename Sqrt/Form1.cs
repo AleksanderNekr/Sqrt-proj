@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Globalization;
+using System.Text;
 using System.Windows.Forms;
 
 namespace Sqrt
 {
     public partial class Form1 : Form
     {
-        public string SqrtSimple;
         public string NumberText;
-        public string roundedNum;
         public Form1()
         {
             InitializeComponent();
@@ -23,10 +22,9 @@ namespace Sqrt
         {
             try
             {
+                NumberText = NumberText.Replace('.', ',');
                 var number = Convert.ToDouble(NumberText);
-
                 textBox.Text = Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text)).ToString();
-
             }
             catch (Exception)
             {
@@ -59,6 +57,11 @@ namespace Sqrt
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBox.Text.Contains(',') || e.KeyChar != ',');
         }
     }
 }
