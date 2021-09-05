@@ -48,5 +48,17 @@ namespace Sqrt
         {
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBox.Text.Contains(',') || textBox.Text.Contains('.') || e.KeyChar != ',');
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = new CultureInfo[]
+            {
+                CultureInfo.GetCultureInfo("ru-RU"),
+                CultureInfo.GetCultureInfo("en-US")
+            };
+            comboBox1.DisplayMember = "NativeName";
+            comboBox1.ValueMember = "Name";
+
+        }
     }
 }

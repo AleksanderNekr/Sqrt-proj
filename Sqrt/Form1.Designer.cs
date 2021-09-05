@@ -111,6 +111,7 @@ namespace Sqrt
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
