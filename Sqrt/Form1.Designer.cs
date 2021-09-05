@@ -36,49 +36,34 @@ namespace Sqrt
             // 
             // textBox
             // 
-            this.textBox.Font = new System.Drawing.Font("Segoe UI", 19F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            resources.ApplyResources(this.textBox, "textBox");
             this.textBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox.Location = new System.Drawing.Point(13, 254);
             this.textBox.Name = "textBox";
-            this.textBox.Size = new System.Drawing.Size(512, 41);
-            this.textBox.TabIndex = 0;
-            this.textBox.Text = "0";
             this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             this.textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
             // 
             // SQRT
             // 
-            this.SQRT.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.SQRT.Location = new System.Drawing.Point(12, 61);
+            resources.ApplyResources(this.SQRT, "SQRT");
             this.SQRT.Name = "SQRT";
-            this.SQRT.Size = new System.Drawing.Size(201, 119);
-            this.SQRT.TabIndex = 1;
-            this.SQRT.Text = "Арифметический корень из числа";
             this.SQRT.UseVisualStyleBackColor = true;
             this.SQRT.Click += new System.EventHandler(this.button1_Click);
             // 
             // ClearButton
             // 
-            this.ClearButton.Image = ((System.Drawing.Image)(resources.GetObject("ClearButton.Image")));
-            this.ClearButton.Location = new System.Drawing.Point(531, 254);
+            resources.ApplyResources(this.ClearButton, "ClearButton");
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(41, 41);
-            this.ClearButton.TabIndex = 2;
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 189);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 15);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Количество знаков после запятой";
             // 
             // numsAfterDot
             // 
-            this.numsAfterDot.Location = new System.Drawing.Point(13, 187);
+            resources.ApplyResources(this.numsAfterDot, "numsAfterDot");
             this.numsAfterDot.Maximum = new decimal(new int[] {
             15,
             0,
@@ -86,8 +71,6 @@ namespace Sqrt
             0});
             this.numsAfterDot.Name = "numsAfterDot";
             this.numsAfterDot.ReadOnly = true;
-            this.numsAfterDot.Size = new System.Drawing.Size(43, 23);
-            this.numsAfterDot.TabIndex = 5;
             this.numsAfterDot.Value = new decimal(new int[] {
             5,
             0,
@@ -97,34 +80,26 @@ namespace Sqrt
             // 
             // ComplexSqrt
             // 
-            this.ComplexSqrt.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ComplexSqrt.Location = new System.Drawing.Point(240, 61);
+            resources.ApplyResources(this.ComplexSqrt, "ComplexSqrt");
             this.ComplexSqrt.Name = "ComplexSqrt";
-            this.ComplexSqrt.Size = new System.Drawing.Size(201, 119);
-            this.ComplexSqrt.TabIndex = 6;
-            this.ComplexSqrt.Text = "Комплексный корень из числа";
             this.ComplexSqrt.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Русский",
-            "English",
-            "Español",
-            "中国人"});
-            this.comboBox1.Location = new System.Drawing.Point(13, 12);
+            resources.GetString("comboBox1.Items"),
+            resources.GetString("comboBox1.Items1"),
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(71, 23);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.Text = "Язык";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 301);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ComplexSqrt);
             this.Controls.Add(this.numsAfterDot);
@@ -135,8 +110,6 @@ namespace Sqrt
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

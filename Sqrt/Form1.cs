@@ -16,7 +16,6 @@ namespace Sqrt
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             NumberText = textBox.Text;
-
         }
         private void button1_Click(object sender, EventArgs e)
         {
