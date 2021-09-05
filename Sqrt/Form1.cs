@@ -10,6 +10,10 @@ namespace Sqrt
         public string NumberText;
         public Form1()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture =
+                CultureInfo.GetCultureInfo("en-US");
+            System.Threading.Thread.CurrentThread.CurrentCulture =
+                CultureInfo.GetCultureInfo("en-US");
             InitializeComponent();
         }
 
@@ -19,6 +23,7 @@ namespace Sqrt
         }
         private void button1_Click(object sender, EventArgs e)
         {
+
             var number = Convert.ToDouble(NumberText);
             textBox.Text = Math.Round(Math.Sqrt(number),
                 int.Parse(numsAfterDot.Text)).ToString();
@@ -41,7 +46,7 @@ namespace Sqrt
         }
         private void textBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBox.Text.Contains(',') || e.KeyChar != ',');
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBox.Text.Contains(',') || textBox.Text.Contains('.') || e.KeyChar != ',');
         }
     }
 }
