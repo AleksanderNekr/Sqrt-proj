@@ -76,7 +76,9 @@ namespace Sqrt
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            SQRT.Update();
+            var win2 = new Form1();
+            win2.Show();
+            Close();
         }
     }
 }

@@ -79,13 +79,22 @@
         rkJggg==
 </value>
   </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 31</value>
+  </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 23</value>
   </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 23</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Язык</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Извлечение корня</value>
   </data>
 </root>

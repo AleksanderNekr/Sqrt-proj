@@ -31,6 +31,7 @@ namespace Sqrt
             this.numsAfterDot = new System.Windows.Forms.NumericUpDown();
             this.ComplexSqrt = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,10 +98,16 @@ namespace Sqrt
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ComplexSqrt);
             this.Controls.Add(this.numsAfterDot);
@@ -128,6 +135,7 @@ namespace Sqrt
         private System.Windows.Forms.NumericUpDown numsAfterDot;
         private System.Windows.Forms.Button ComplexSqrt;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
