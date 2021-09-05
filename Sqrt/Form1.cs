@@ -20,15 +20,9 @@ namespace Sqrt
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                var number = Convert.ToDouble(NumberText);
-                textBox.Text = Math.Round(Math.Sqrt(number), int.Parse(numsAfterDot.Text)).ToString();
-            }
-            catch (Exception)
-            {
-                textBox.Text = "Ошибка!";
-            }
+            var number = Convert.ToDouble(NumberText);
+            textBox.Text = Math.Round(Math.Sqrt(number),
+                int.Parse(numsAfterDot.Text)).ToString();
         }
         private void ClearButton_Click(object sender, EventArgs e)
         {
