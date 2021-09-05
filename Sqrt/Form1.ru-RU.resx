@@ -1,64 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <!-- 
-    Microsoft ResX Schema 
-    
-    Version 2.0
-    
-    The primary goals of this format is to allow a simple XML format 
-    that is mostly human readable. The generation and parsing of the 
-    various data types are done through the TypeConverter classes 
-    associated with the data types.
-    
-    Example:
-    
-    ... ado.net/XML headers & schema ...
-    <resheader name="resmimetype">text/microsoft-resx</resheader>
-    <resheader name="version">2.0</resheader>
-    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
-    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
-    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
-    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
-    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
-        <value>[base64 mime encoded serialized .NET Framework object]</value>
-    </data>
-    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
-        <comment>This is a comment</comment>
-    </data>
-                
-    There are any number of "resheader" rows that contain simple 
-    name/value pairs.
-    
-    Each data row contains a name, and value. The row also contains a 
-    type or mimetype. Type corresponds to a .NET class that support 
-    text/value conversion through the TypeConverter architecture. 
-    Classes that don't support this are serialized and stored with the 
-    mimetype set.
-    
-    The mimetype is used for serialized objects, and tells the 
-    ResXResourceReader how to depersist the object. This is currently not 
-    extensible. For a given mimetype the value must be set accordingly:
-    
-    Note - application/x-microsoft.net.object.binary.base64 is the format 
-    that the ResXResourceWriter will generate, however the reader can 
-    read any of the formats listed below.
-    
-    mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
-            : and then encoded with base64 encoding.
-    
-    mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with 
-            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
-            : and then encoded with base64 encoding.
-
-    mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array 
-            : using a System.ComponentModel.TypeConverter
-            : and then encoded with base64 encoding.
-    -->
+﻿<root>
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
@@ -117,121 +57,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ClearButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAA68AAAOvAGVvHJJAAAAB3RJ
+        TUUH5QMaBRMyXao/QwAAAydJREFUWEfNWT2PElEU5fsrAgEmkBgh0JCQAIZQ0Uhv+AkmJmvhNmtloRVu
+        4b+w2K1tbS3c1t34A/YPmNhuYmXwnMc8BLzD3JkBwklO3mXexz3Me+/eNzOxsOh2u51SqXSez+evs9ns
+        XTqd/gX+icfjC5b8jeu3rGc7tne7Hhaz2axQqVRew/l3isElNdk+l8vdov85x8G1/WI+n6eq1eqbVCr1
+        Ez9FEUHIcTgex8Xv6Gi3209x537AFB1GIcfl+LDDo9FonCWTyd8wRSf7IMd3HOcMdnBg7VwGXXdhST/l
+        cvkSth4UiEIc8JBUC8UUvzrWHdwm/fpOPRfxodegH+nfczMxHBxqFwcldYjhiXELhdhpm4hzD9J1DbV9
+        XT3/wAygDdTFYvHTeDxuZTKZe6l+FwuFws1kMqkj83yV6tdJPRuZiakOhdh4nRSIaUjAjg0GgydBhELg
+        t+l0+gh2DH+yoBHKFIpyCeZUFGLDdTabzfcoV9AKXRdI8I/WarVrmGJ7S1fX8jSjDTlsB6HvYK/gJ9RD
+        4BVMsf066c+cnniMkhp4MYjQKAItzZTzvCdV7qJG6D4EkkYfYtKdVOlHL6FYR/cQeLMPgaTRxxO0VKmh
+        JHQ0Gj3eFogpCyWQNPp41JcqtZSEWkQVSBp9dCJVBiHH6HQ6L2BvAIeVjyjEPloafVHvJLm9Bi3sGoUp
+        9tPQ6MOODL0mye1dvFgs4q5p4BdH/WjWJHaPKttIFAQm6vX6lTaOamj0hYmTpJdAmtJmCivU6HOTuNjA
+        i7sEWu5LqMmIQXI3qRFoGVUo+6/efGhPQRC4sYt3CbSMInR1CiIw5b7nSTrr9/vPYRtoBFpKQlut1lsU
+        YntLdykuoT2ZIxw89Hq9Z0EEWq4LxYPWSzxw7YzP/53MCe0zDoWi7Repzo8Uij/32U8gCR8XKDeBPHv6
+        T4vEKTx3JxIJ7+duC76k4rTAPDrpl/5h+6NcLn9AIQ50SLp+9WCHY91R+gks0OIY7ye5BtVT7AUu4kPt
+        eo7ru0m0YDhwHGff78wvPMNMFDADMIUip57e1wcJw+FQ/R2HwsJ/x4nF/gJOWP60Nk68RAAAAABJRU5E
+        rkJggg==
+</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.Name" xml:space="preserve">
-    <value>ClearButton</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ClearButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.Name" xml:space="preserve">
-    <value>ComplexSqrt</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;numsAfterDot.Name" xml:space="preserve">
-    <value>numsAfterDot</value>
-  </data>
-  <data name="&gt;&gt;numsAfterDot.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;numsAfterDot.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numsAfterDot.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;SQRT.Name" xml:space="preserve">
-    <value>SQRT</value>
-  </data>
-  <data name="&gt;&gt;SQRT.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;SQRT.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SQRT.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;textBox.Name" xml:space="preserve">
-    <value>textBox</value>
-  </data>
-  <data name="&gt;&gt;textBox.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>Español</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>中国人</value>
-  </data>
-  <data name="ComplexSqrt.Text" xml:space="preserve">
-    <value>Комплексный корень из числа</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Количество знаков после запятой</value>
-  </data>
-  <data name="SQRT.Text" xml:space="preserve">
-    <value>Арифметический корень из числа</value>
-  </data>
-  <data name="textBox.Text" xml:space="preserve">
-    <value>0</value>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 23</value>
   </data>
 </root>

@@ -11,9 +11,9 @@ namespace Sqrt
         public Form1()
         {
             System.Threading.Thread.CurrentThread.CurrentUICulture =
-                CultureInfo.GetCultureInfo("en-US");
+                CultureInfo.GetCultureInfo("ru-RU");
             System.Threading.Thread.CurrentThread.CurrentCulture =
-                CultureInfo.GetCultureInfo("en-US");
+                CultureInfo.GetCultureInfo("ru-RU");
             InitializeComponent();
         }
 
@@ -58,7 +58,10 @@ namespace Sqrt
             };
             comboBox1.DisplayMember = "NativeName";
             comboBox1.ValueMember = "Name";
-
+            if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
+            {
+                
+            }
         }
     }
 }
