@@ -10,10 +10,14 @@ namespace Sqrt
         public string NumberText;
         public Form1()
         {
-            System.Threading.Thread.CurrentThread.CurrentUICulture =
-                CultureInfo.GetCultureInfo("ru-RU");
-            System.Threading.Thread.CurrentThread.CurrentCulture =
-                CultureInfo.GetCultureInfo("ru-RU");
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
+            {
+                System.Threading.Thread.CurrentThread.CurrentUICulture =
+                    CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+                System.Threading.Thread.CurrentThread.CurrentCulture =
+                    CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+            }
+
             InitializeComponent();
         }
 
@@ -58,10 +62,21 @@ namespace Sqrt
             };
             comboBox1.DisplayMember = "NativeName";
             comboBox1.ValueMember = "Name";
-            if (!String.IsNullOrEmpty(Properties.Settings.Default.Language))
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
-                
+                comboBox1.SelectedValue = Properties.Settings.Default.Language;
             }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Properties.Settings.Default.Language = comboBox1.SelectedValue.ToString();
+            Properties.Settings.Default.Save();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SQRT.Update();
         }
     }
 }
