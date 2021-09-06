@@ -35,8 +35,8 @@ namespace Sqrt
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxRE = new System.Windows.Forms.TextBox();
             this.ClearButtonRE = new System.Windows.Forms.Button();
-            this.textBoxIM = new System.Windows.Forms.TextBox();
             this.ClearButtonIM = new System.Windows.Forms.Button();
+            this.textBoxIM = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
@@ -134,19 +134,19 @@ namespace Sqrt
             this.ClearButtonRE.UseVisualStyleBackColor = true;
             this.ClearButtonRE.Click += new System.EventHandler(this.ClearButtonRE_Click);
             // 
-            // textBoxIM
-            // 
-            resources.ApplyResources(this.textBoxIM, "textBoxIM");
-            this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBoxIM.Name = "textBoxIM";
-            this.textBoxIM.TextChanged += new System.EventHandler(this.textBoxIM_TextChanged);
-            // 
             // ClearButtonIM
             // 
             resources.ApplyResources(this.ClearButtonIM, "ClearButtonIM");
             this.ClearButtonIM.Name = "ClearButtonIM";
             this.ClearButtonIM.UseVisualStyleBackColor = true;
             this.ClearButtonIM.Click += new System.EventHandler(this.ClearButtonIM_Click);
+            // 
+            // textBoxIM
+            // 
+            resources.ApplyResources(this.textBoxIM, "textBoxIM");
+            this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxIM.Name = "textBoxIM";
+            this.textBoxIM.TextChanged += new System.EventHandler(this.textBoxIM_TextChanged);
             // 
             // label3
             // 
@@ -202,8 +202,8 @@ namespace Sqrt
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxRE;
         private System.Windows.Forms.Button ClearButtonRE;
-        private System.Windows.Forms.TextBox textBoxIM;
         private System.Windows.Forms.Button ClearButtonIM;
+        private System.Windows.Forms.TextBox textBoxIM;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
     }

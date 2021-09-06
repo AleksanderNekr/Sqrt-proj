@@ -100,12 +100,13 @@ namespace Sqrt
             var NumRE = double.Parse(textBoxRE.Text);
             var NumIM = double.Parse(textBoxIM.Text);
             var ComplexNum = new Complex(NumRE, NumIM);
-            NumRE = Complex.Sqrt(ComplexNum);
-
+            textBoxRE.Text = Complex.Sqrt(ComplexNum).Real.ToString();
+            textBoxIM.Text = Complex.Sqrt(ComplexNum).Imaginary.ToString();
         }
 
         private void TextBoxRE_TextChanged(object sender, EventArgs e)
         {
+
         }
         private void textBoxIM_TextChanged(object sender, EventArgs e)
         {

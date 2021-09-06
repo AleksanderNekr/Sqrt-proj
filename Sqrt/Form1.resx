@@ -384,33 +384,6 @@
   <data name="&gt;&gt;ClearButtonRE.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="textBoxIM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 19pt</value>
-  </data>
-  <data name="textBoxIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 178</value>
-  </data>
-  <data name="textBoxIM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 41</value>
-  </data>
-  <data name="textBoxIM.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="textBoxIM.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;textBoxIM.Name" xml:space="preserve">
-    <value>textBoxIM</value>
-  </data>
-  <data name="&gt;&gt;textBoxIM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxIM.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;textBoxIM.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="ClearButtonIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACkAAAApCAYAAACoYAD2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -456,8 +429,38 @@
   <data name="&gt;&gt;ClearButtonIM.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="textBoxIM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 19pt</value>
+  </data>
+  <data name="textBoxIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 178</value>
+  </data>
+  <data name="textBoxIM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 41</value>
+  </data>
+  <data name="textBoxIM.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="textBoxIM.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxIM.Name" xml:space="preserve">
+    <value>textBoxIM</value>
+  </data>
+  <data name="&gt;&gt;textBoxIM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxIM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxIM.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>219, 140</value>
