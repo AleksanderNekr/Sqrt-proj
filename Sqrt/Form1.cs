@@ -29,7 +29,7 @@ namespace Sqrt
         private void button1_Click(object sender, EventArgs e)
         {
 
-            var number = Convert.ToDouble(NumberText);
+            var number = NumberText == "" ? 0.0 : Convert.ToDouble(NumberText);
             textBox.Text = Math.Round(Math.Sqrt(number),
                 int.Parse(numsAfterDot.Text)).ToString();
         }
@@ -97,8 +97,8 @@ namespace Sqrt
 
         private void ComplexSqrt_Click(object sender, EventArgs e)
         {
-            var NumRE = double.Parse(textBoxRE.Text);
-            var NumIM = double.Parse(textBoxIM.Text);
+            var NumRE = textBoxRE.Text == "" ? 0.0 : double.Parse(textBoxRE.Text);
+            var NumIM = textBoxIM.Text == "" ? 0.0 : double.Parse(textBoxIM.Text);
             var ComplexNum = new Complex(NumRE, NumIM);
             textBoxRE.Text = Complex.Sqrt(ComplexNum).Real.ToString();
             textBoxIM.Text = Complex.Sqrt(ComplexNum).Imaginary.ToString();
