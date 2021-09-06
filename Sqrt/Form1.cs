@@ -59,7 +59,7 @@ namespace Sqrt
             {
                 CultureInfo.GetCultureInfo("ru-RU"),
                 CultureInfo.GetCultureInfo("en-US"),
-                CultureInfo.GetCultureInfo("en-US"),
+                CultureInfo.GetCultureInfo("es-ES"),
                 CultureInfo.GetCultureInfo("en-US"),
             };
             comboBox1.DisplayMember = "NativeName";
@@ -85,6 +85,11 @@ namespace Sqrt
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

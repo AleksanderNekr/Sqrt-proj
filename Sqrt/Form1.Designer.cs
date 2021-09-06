@@ -104,6 +104,7 @@ namespace Sqrt
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // button1
             // 
