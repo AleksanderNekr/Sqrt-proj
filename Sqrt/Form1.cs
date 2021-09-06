@@ -60,7 +60,7 @@ namespace Sqrt
                 CultureInfo.GetCultureInfo("ru-RU"),
                 CultureInfo.GetCultureInfo("en-US"),
                 CultureInfo.GetCultureInfo("es-ES"),
-                CultureInfo.GetCultureInfo("en-US"),
+                CultureInfo.GetCultureInfo("zh"),
             };
             comboBox1.DisplayMember = "NativeName";
             comboBox1.ValueMember = "Name";
