@@ -58,7 +58,9 @@ namespace Sqrt
             comboBox1.DataSource = new CultureInfo[]
             {
                 CultureInfo.GetCultureInfo("ru-RU"),
-                CultureInfo.GetCultureInfo("en-US")
+                CultureInfo.GetCultureInfo("en-US"),
+                CultureInfo.GetCultureInfo("en-US"),
+                CultureInfo.GetCultureInfo("en-US"),
             };
             comboBox1.DisplayMember = "NativeName";
             comboBox1.ValueMember = "Name";
@@ -76,10 +78,15 @@ namespace Sqrt
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            if (MessageBox.Show(popuplang.ChangeLangRequest, popuplang.ChangeTitle, MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (MessageBox.Show(popuplang.ChangeLangRequest, popuplang.ChangeTitle, MessageBoxButtons.OK) == DialogResult.OK)
             {
                 this.Close();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
