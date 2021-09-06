@@ -11,12 +11,12 @@ namespace Sqrt
         public string NumberText;
         public Form1()
         {
+            
             if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture =
                     CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
-                System.Threading.Thread.CurrentThread.CurrentCulture =
-                    CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
+                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
             }
 
             InitializeComponent();
@@ -101,13 +101,13 @@ namespace Sqrt
 
         private void textBoxRE_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxRE.Text.Contains(',') || textBoxRE.Text.Contains('.') || e.KeyChar != ',');
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxRE.Text.Contains('.') || e.KeyChar != '.');
         }
 
         private void textBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxIM.Text.Contains(',') || textBoxIM.Text.Contains('.') || e.KeyChar != ',');
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxIM.Text.Contains('.') || e.KeyChar != '.');
         }
 
         private void plMinBtnRE_Click(object sender, EventArgs e)
