@@ -94,6 +94,9 @@
   <data name="label2.Text" xml:space="preserve">
     <value>Язык</value>
   </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 30</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Извлечение корня</value>
   </data>

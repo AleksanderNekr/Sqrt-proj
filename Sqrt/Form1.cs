@@ -76,9 +76,10 @@ namespace Sqrt
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            var win2 = new Form1();
-            win2.Show();
-            Close();
+            if (MessageBox.Show("После смены языка нужно перезапустить программу", "Смена языка", MessageBoxButtons.OKCancel) == System.Windows.Forms.DialogResult.OK)
+            {
+                this.Close();
+            }
         }
     }
 }
