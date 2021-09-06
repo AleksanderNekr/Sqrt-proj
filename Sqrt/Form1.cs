@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Numerics;
 using System.Text;
 using System.Windows.Forms;
 
@@ -92,6 +93,41 @@ namespace Sqrt
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ComplexSqrt_Click(object sender, EventArgs e)
+        {
+            var NumRE = double.Parse(textBoxRE.Text);
+            var NumIM = double.Parse(textBoxIM.Text);
+            var ComplexNum = new Complex(NumRE, NumIM);
+            NumRE = Complex.Sqrt(ComplexNum);
+
+        }
+
+        private void TextBoxRE_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void textBoxIM_TextChanged(object sender, EventArgs e)
+        {
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ClearButtonRE_Click(object sender, EventArgs e)
+        {
+            textBoxRE.Text = "0";
+        }
+
+        private void ClearButtonIM_Click(object sender, EventArgs e)
+        {
+            textBoxIM.Text = "0";
         }
     }
 }

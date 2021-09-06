@@ -33,6 +33,12 @@ namespace Sqrt
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.textBoxRE = new System.Windows.Forms.TextBox();
+            this.ClearButtonRE = new System.Windows.Forms.Button();
+            this.textBoxIM = new System.Windows.Forms.TextBox();
+            this.ClearButtonIM = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,10 +92,10 @@ namespace Sqrt
             resources.ApplyResources(this.ComplexSqrt, "ComplexSqrt");
             this.ComplexSqrt.Name = "ComplexSqrt";
             this.ComplexSqrt.UseVisualStyleBackColor = true;
+            this.ComplexSqrt.Click += new System.EventHandler(this.ComplexSqrt_Click);
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -97,6 +103,7 @@ namespace Sqrt
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2"),
             resources.GetString("comboBox1.Items3")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -113,10 +120,55 @@ namespace Sqrt
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // textBoxRE
+            // 
+            resources.ApplyResources(this.textBoxRE, "textBoxRE");
+            this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxRE.Name = "textBoxRE";
+            this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
+            // 
+            // ClearButtonRE
+            // 
+            resources.ApplyResources(this.ClearButtonRE, "ClearButtonRE");
+            this.ClearButtonRE.Name = "ClearButtonRE";
+            this.ClearButtonRE.UseVisualStyleBackColor = true;
+            this.ClearButtonRE.Click += new System.EventHandler(this.ClearButtonRE_Click);
+            // 
+            // textBoxIM
+            // 
+            resources.ApplyResources(this.textBoxIM, "textBoxIM");
+            this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.textBoxIM.Name = "textBoxIM";
+            this.textBoxIM.TextChanged += new System.EventHandler(this.textBoxIM_TextChanged);
+            // 
+            // ClearButtonIM
+            // 
+            resources.ApplyResources(this.ClearButtonIM, "ClearButtonIM");
+            this.ClearButtonIM.Name = "ClearButtonIM";
+            this.ClearButtonIM.UseVisualStyleBackColor = true;
+            this.ClearButtonIM.Click += new System.EventHandler(this.ClearButtonIM_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ClearButtonIM);
+            this.Controls.Add(this.textBoxIM);
+            this.Controls.Add(this.ClearButtonRE);
+            this.Controls.Add(this.textBoxRE);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
@@ -148,6 +200,12 @@ namespace Sqrt
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBoxRE;
+        private System.Windows.Forms.Button ClearButtonRE;
+        private System.Windows.Forms.TextBox textBoxIM;
+        private System.Windows.Forms.Button ClearButtonIM;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
