@@ -22,21 +22,6 @@ namespace Sqrt
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            NumberText = textBox.Text;
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            var number = NumberText == "" ? 0.0 : Convert.ToDouble(NumberText);
-            textBox.Text = Math.Round(Math.Sqrt(number),
-                int.Parse(numsAfterDot.Text)).ToString();
-        }
-        private void ClearButton_Click(object sender, EventArgs e)
-        {
-            textBox.Text = "0";
-        }
         private void numsAfterDot_ValueChanged(object sender, EventArgs e)
         {
         }
@@ -49,11 +34,7 @@ namespace Sqrt
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-        private void textBox_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBox.Text.Contains(',') || textBox.Text.Contains('.') || e.KeyChar != ',');
-        }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = new CultureInfo[]
@@ -92,7 +73,7 @@ namespace Sqrt
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ComplexSqrt_Click(object sender, EventArgs e)
@@ -100,9 +81,45 @@ namespace Sqrt
             var NumRE = textBoxRE.Text == "" ? 0.0 : double.Parse(textBoxRE.Text);
             var NumIM = textBoxIM.Text == "" ? 0.0 : double.Parse(textBoxIM.Text);
             var ComplexNum = new Complex(NumRE, NumIM);
-            textBoxRE.Text = Complex.Sqrt(ComplexNum).Real.ToString();
-            textBoxIM.Text = Complex.Sqrt(ComplexNum).Imaginary.ToString();
+
+            textBoxRE.Text = Math.Round(double.Parse(Complex.Sqrt(ComplexNum).Real
+                .ToString()), int.Parse(numsAfterDot.Text)).ToString();
+
+            textBoxIM.Text = Math.Round(double.Parse(Complex.Sqrt(ComplexNum).Imaginary
+                .ToString()), int.Parse(numsAfterDot.Text)).ToString();
         }
+
+        private void ClearButtonRE_Click(object sender, EventArgs e)
+        {
+            textBoxRE.Text = "0";
+        }
+
+        private void ClearButtonIM_Click(object sender, EventArgs e)
+        {
+            textBoxIM.Text = "0";
+        }
+
+        private void textBoxRE_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxRE.Text.Contains(',') || textBoxRE.Text.Contains('.') || e.KeyChar != ',');
+        }
+
+        private void textBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxIM.Text.Contains(',') || textBoxIM.Text.Contains('.') || e.KeyChar != ',');
+        }
+
+        private void plMinBtnRE_Click(object sender, EventArgs e)
+        {
+            textBoxRE.Text = (-1 * double.Parse(textBoxRE.Text)).ToString();
+        }
+
+        private void plMinBtnIM_Click(object sender, EventArgs e)
+        {
+            textBoxIM.Text = (-1 * double.Parse(textBoxIM.Text)).ToString();
+        }
+        
 
         private void TextBoxRE_TextChanged(object sender, EventArgs e)
         {
@@ -119,16 +136,6 @@ namespace Sqrt
         private void label4_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void ClearButtonRE_Click(object sender, EventArgs e)
-        {
-            textBoxRE.Text = "0";
-        }
-
-        private void ClearButtonIM_Click(object sender, EventArgs e)
-        {
-            textBoxIM.Text = "0";
         }
     }
 }

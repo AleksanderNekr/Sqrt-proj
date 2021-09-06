@@ -24,9 +24,6 @@ namespace Sqrt
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox = new System.Windows.Forms.TextBox();
-            this.SQRT = new System.Windows.Forms.Button();
-            this.ClearButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.numsAfterDot = new System.Windows.Forms.NumericUpDown();
             this.ComplexSqrt = new System.Windows.Forms.Button();
@@ -39,30 +36,10 @@ namespace Sqrt
             this.textBoxIM = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.plMinBtnRE = new System.Windows.Forms.Button();
+            this.plMinBtnIM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox
-            // 
-            resources.ApplyResources(this.textBox, "textBox");
-            this.textBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox.Name = "textBox";
-            this.textBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            this.textBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox_KeyPress);
-            // 
-            // SQRT
-            // 
-            resources.ApplyResources(this.SQRT, "SQRT");
-            this.SQRT.Name = "SQRT";
-            this.SQRT.UseVisualStyleBackColor = true;
-            this.SQRT.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // ClearButton
-            // 
-            resources.ApplyResources(this.ClearButton, "ClearButton");
-            this.ClearButton.Name = "ClearButton";
-            this.ClearButton.UseVisualStyleBackColor = true;
-            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // label1
             // 
@@ -126,6 +103,7 @@ namespace Sqrt
             this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxRE.Name = "textBoxRE";
             this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
+            this.textBoxRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRE_KeyPress_1);
             // 
             // ClearButtonRE
             // 
@@ -147,6 +125,7 @@ namespace Sqrt
             this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxIM.Name = "textBoxIM";
             this.textBoxIM.TextChanged += new System.EventHandler(this.textBoxIM_TextChanged);
+            this.textBoxIM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxIM_KeyPress_1);
             // 
             // label3
             // 
@@ -159,10 +138,26 @@ namespace Sqrt
             this.label4.Name = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // plMinBtnRE
+            // 
+            resources.ApplyResources(this.plMinBtnRE, "plMinBtnRE");
+            this.plMinBtnRE.Name = "plMinBtnRE";
+            this.plMinBtnRE.UseVisualStyleBackColor = true;
+            this.plMinBtnRE.Click += new System.EventHandler(this.plMinBtnRE_Click);
+            // 
+            // plMinBtnIM
+            // 
+            resources.ApplyResources(this.plMinBtnIM, "plMinBtnIM");
+            this.plMinBtnIM.Name = "plMinBtnIM";
+            this.plMinBtnIM.UseVisualStyleBackColor = true;
+            this.plMinBtnIM.Click += new System.EventHandler(this.plMinBtnIM_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.plMinBtnIM);
+            this.Controls.Add(this.plMinBtnRE);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ClearButtonIM);
@@ -175,9 +170,6 @@ namespace Sqrt
             this.Controls.Add(this.ComplexSqrt);
             this.Controls.Add(this.numsAfterDot);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ClearButton);
-            this.Controls.Add(this.SQRT);
-            this.Controls.Add(this.textBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -190,10 +182,6 @@ namespace Sqrt
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox;
-        private System.Windows.Forms.Button SQRT;
-        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numsAfterDot;
         private System.Windows.Forms.Button ComplexSqrt;
@@ -206,6 +194,8 @@ namespace Sqrt
         private System.Windows.Forms.TextBox textBoxIM;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button plMinBtnRE;
+        private System.Windows.Forms.Button plMinBtnIM;
     }
 }
 
