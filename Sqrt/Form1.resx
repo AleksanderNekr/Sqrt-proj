@@ -89,28 +89,28 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="numsAfterDot.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
+  <data name="CountNumsAfterDot.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 13pt</value>
   </data>
-  <data name="numsAfterDot.Location" type="System.Drawing.Point, System.Drawing">
-    <value>438, 11</value>
+  <data name="CountNumsAfterDot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>437, 11</value>
   </data>
-  <data name="numsAfterDot.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 29</value>
+  <data name="CountNumsAfterDot.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 31</value>
   </data>
-  <data name="numsAfterDot.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="CountNumsAfterDot.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
-  <data name="&gt;&gt;numsAfterDot.Name" xml:space="preserve">
-    <value>numsAfterDot</value>
+  <data name="&gt;&gt;CountNumsAfterDot.Name" xml:space="preserve">
+    <value>CountNumsAfterDot</value>
   </data>
-  <data name="&gt;&gt;numsAfterDot.Type" xml:space="preserve">
+  <data name="&gt;&gt;CountNumsAfterDot.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;numsAfterDot.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CountNumsAfterDot.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;numsAfterDot.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;CountNumsAfterDot.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
   <data name="ComplexSqrt.Font" type="System.Drawing.Font, System.Drawing">
@@ -490,7 +490,7 @@
     <value>Form1</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+    <value>SquareRootProgram</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

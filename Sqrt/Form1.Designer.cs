@@ -1,7 +1,7 @@
 ﻿
 namespace Sqrt
 {
-    partial class Form1
+    partial class SquareRootProgram
     {
         private System.ComponentModel.IContainer components = null;
         
@@ -23,9 +23,9 @@ namespace Sqrt
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SquareRootProgram));
             this.label1 = new System.Windows.Forms.Label();
-            this.numsAfterDot = new System.Windows.Forms.NumericUpDown();
+            this.CountNumsAfterDot = new System.Windows.Forms.NumericUpDown();
             this.ComplexSqrt = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -38,7 +38,7 @@ namespace Sqrt
             this.label4 = new System.Windows.Forms.Label();
             this.plMinBtnRE = new System.Windows.Forms.Button();
             this.plMinBtnIM = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CountNumsAfterDot)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,22 +47,22 @@ namespace Sqrt
             this.label1.Name = "label1";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // numsAfterDot
+            // CountNumsAfterDot
             // 
-            resources.ApplyResources(this.numsAfterDot, "numsAfterDot");
-            this.numsAfterDot.Maximum = new decimal(new int[] {
+            resources.ApplyResources(this.CountNumsAfterDot, "CountNumsAfterDot");
+            this.CountNumsAfterDot.Maximum = new decimal(new int[] {
             15,
             0,
             0,
             0});
-            this.numsAfterDot.Name = "numsAfterDot";
-            this.numsAfterDot.ReadOnly = true;
-            this.numsAfterDot.Value = new decimal(new int[] {
+            this.CountNumsAfterDot.Name = "CountNumsAfterDot";
+            this.CountNumsAfterDot.ReadOnly = true;
+            this.CountNumsAfterDot.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numsAfterDot.ValueChanged += new System.EventHandler(this.NumsAfterDot_ValueChanged);
+            this.CountNumsAfterDot.ValueChanged += new System.EventHandler(this.NumsAfterDot_ValueChanged);
             // 
             // ComplexSqrt
             // 
@@ -152,7 +152,7 @@ namespace Sqrt
             this.plMinBtnIM.UseVisualStyleBackColor = true;
             this.plMinBtnIM.Click += new System.EventHandler(this.PlMinBtnIM_Click);
             // 
-            // Form1
+            // SquareRootProgram
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -168,14 +168,14 @@ namespace Sqrt
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.ComplexSqrt);
-            this.Controls.Add(this.numsAfterDot);
+            this.Controls.Add(this.CountNumsAfterDot);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "SquareRootProgram";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numsAfterDot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CountNumsAfterDot)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,7 +183,7 @@ namespace Sqrt
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numsAfterDot;
+        private System.Windows.Forms.NumericUpDown CountNumsAfterDot;
         private System.Windows.Forms.Button ComplexSqrt;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;

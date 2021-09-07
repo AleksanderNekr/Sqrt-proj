@@ -5,10 +5,10 @@ using System.Windows.Forms;
 
 namespace Sqrt
 {
-    public partial class Form1 : Form
+    public partial class SquareRootProgram : Form
     {
         public string NumberText;
-        public Form1()
+        public SquareRootProgram()
         {
 
             if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
@@ -77,22 +77,22 @@ namespace Sqrt
 
         private void ComplexSqrt_Click(object sender, EventArgs e)
         {
-            double textboxConverter(string text)
+            double ConvertTextbox(string text)
             {
                 return text == "" ? 0.0 : double.Parse(text);
             }
 
-            double NumRE = textboxConverter(textBoxRE.Text);
-            double NumIM = textboxConverter(textBoxIM.Text);
+            double NumRE = ConvertTextbox(textBoxRE.Text);
+            double NumIM = ConvertTextbox(textBoxIM.Text);
             Complex ComplexNum = new Complex(NumRE, NumIM);
 
-            string numberSqrt(double number)
+            string GetNumberSqrt(double number)
             {
-                return Math.Round(number, int.Parse(numsAfterDot.Text)).ToString();
+                return Math.Round(number, int.Parse(CountNumsAfterDot.Text)).ToString();
             }
 
-            textBoxRE.Text = numberSqrt(Complex.Sqrt(ComplexNum).Real);
-            textBoxIM.Text = numberSqrt(Complex.Sqrt(ComplexNum).Imaginary);
+            textBoxRE.Text = GetNumberSqrt(Complex.Sqrt(ComplexNum).Real);
+            textBoxIM.Text = GetNumberSqrt(Complex.Sqrt(ComplexNum).Imaginary);
         }
 
         private void ClearButtonRE_Click(object sender, EventArgs e)
