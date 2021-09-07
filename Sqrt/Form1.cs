@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Globalization;
 using System.Numerics;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Sqrt
@@ -16,22 +15,22 @@ namespace Sqrt
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture =
                     CultureInfo.GetCultureInfo(Properties.Settings.Default.Language);
-                System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
+                System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             }
 
             InitializeComponent();
         }
 
-        private void numsAfterDot_ValueChanged(object sender, EventArgs e)
+        private void NumsAfterDot_ValueChanged(object sender, EventArgs e)
         {
         }
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void ToolStripButton1_Click(object sender, EventArgs e)
         {
         }
-        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        private void ToolStripComboBox1_Click(object sender, EventArgs e)
         {
         }
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
@@ -58,29 +57,34 @@ namespace Sqrt
             Properties.Settings.Default.Save();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Button1_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show(popuplang.ChangeLangRequest, popuplang.ChangeTitle, MessageBoxButtons.OK) == DialogResult.OK)
             {
-                this.Close();
+                Close();
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void Label2_Click(object sender, EventArgs e)
         {
 
         }
 
         private void ComplexSqrt_Click(object sender, EventArgs e)
         {
-            var NumRE = textBoxRE.Text == "" ? 0.0 : double.Parse(textBoxRE.Text);
-            var NumIM = textBoxIM.Text == "" ? 0.0 : double.Parse(textBoxIM.Text);
-            var ComplexNum = new Complex(NumRE, NumIM);
+            double textboxConverter(string text)
+            {
+                return text == "" ? 0.0 : double.Parse(text);
+            }
+
+            double NumRE = textboxConverter(textBoxRE.Text);
+            double NumIM = textboxConverter(textBoxIM.Text);
+            Complex ComplexNum = new Complex(NumRE, NumIM);
 
             string numberSqrt(double number)
             {
@@ -100,26 +104,30 @@ namespace Sqrt
         {
             textBoxIM.Text = "0";
         }
-
-        private void textBoxRE_KeyPress_1(object sender, KeyPressEventArgs e)
+        public bool PreventBadText(string text, char key)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxRE.Text.Contains('.') || e.KeyChar != '.');
+            return !char.IsDigit(key) && key != 8 && (text.Contains('.') || key != '.');
+        }
+        private void TextBoxRE_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = PreventBadText(textBoxRE.Text, e.KeyChar);
+        }
+        private void TextBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = PreventBadText(textBoxIM.Text, e.KeyChar);
+        }
+        public string ChangeSign(string text)
+        {
+            return (-1 * double.Parse(text)).ToString();
+        }
+        private void PlMinBtnRE_Click(object sender, EventArgs e)
+        {
+            textBoxRE.Text = ChangeSign(textBoxRE.Text);
         }
 
-        private void textBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
+        private void PlMinBtnIM_Click(object sender, EventArgs e)
         {
-
-            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxIM.Text.Contains('.') || e.KeyChar != '.');
-        }
-
-        private void plMinBtnRE_Click(object sender, EventArgs e)
-        {
-            textBoxRE.Text = (-1 * double.Parse(textBoxRE.Text)).ToString();
-        }
-
-        private void plMinBtnIM_Click(object sender, EventArgs e)
-        {
-            textBoxIM.Text = (-1 * double.Parse(textBoxIM.Text)).ToString();
+            textBoxIM.Text = ChangeSign(textBoxIM.Text);
         }
 
 
@@ -127,15 +135,15 @@ namespace Sqrt
         {
 
         }
-        private void textBoxIM_TextChanged(object sender, EventArgs e)
+        private void TextBoxIM_TextChanged(object sender, EventArgs e)
         {
         }
-        private void label3_Click(object sender, EventArgs e)
+        private void Label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void Label4_Click(object sender, EventArgs e)
         {
 
         }

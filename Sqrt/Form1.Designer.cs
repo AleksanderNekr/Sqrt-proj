@@ -45,7 +45,7 @@ namespace Sqrt
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // numsAfterDot
             // 
@@ -62,7 +62,7 @@ namespace Sqrt
             0,
             0,
             0});
-            this.numsAfterDot.ValueChanged += new System.EventHandler(this.numsAfterDot_ValueChanged);
+            this.numsAfterDot.ValueChanged += new System.EventHandler(this.NumsAfterDot_ValueChanged);
             // 
             // ComplexSqrt
             // 
@@ -82,20 +82,20 @@ namespace Sqrt
             resources.GetString("comboBox1.Items3")});
             resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // textBoxRE
             // 
@@ -103,7 +103,7 @@ namespace Sqrt
             this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxRE.Name = "textBoxRE";
             this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
-            this.textBoxRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxRE_KeyPress_1);
+            this.textBoxRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxRE_KeyPress_1);
             // 
             // ClearButtonRE
             // 
@@ -124,8 +124,8 @@ namespace Sqrt
             resources.ApplyResources(this.textBoxIM, "textBoxIM");
             this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxIM.Name = "textBoxIM";
-            this.textBoxIM.TextChanged += new System.EventHandler(this.textBoxIM_TextChanged);
-            this.textBoxIM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBoxIM_KeyPress_1);
+            this.textBoxIM.TextChanged += new System.EventHandler(this.TextBoxIM_TextChanged);
+            this.textBoxIM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxIM_KeyPress_1);
             // 
             // label3
             // 
@@ -136,21 +136,21 @@ namespace Sqrt
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // plMinBtnRE
             // 
             resources.ApplyResources(this.plMinBtnRE, "plMinBtnRE");
             this.plMinBtnRE.Name = "plMinBtnRE";
             this.plMinBtnRE.UseVisualStyleBackColor = true;
-            this.plMinBtnRE.Click += new System.EventHandler(this.plMinBtnRE_Click);
+            this.plMinBtnRE.Click += new System.EventHandler(this.PlMinBtnRE_Click);
             // 
             // plMinBtnIM
             // 
             resources.ApplyResources(this.plMinBtnIM, "plMinBtnIM");
             this.plMinBtnIM.Name = "plMinBtnIM";
             this.plMinBtnIM.UseVisualStyleBackColor = true;
-            this.plMinBtnIM.Click += new System.EventHandler(this.plMinBtnIM_Click);
+            this.plMinBtnIM.Click += new System.EventHandler(this.PlMinBtnIM_Click);
             // 
             // Form1
             // 
