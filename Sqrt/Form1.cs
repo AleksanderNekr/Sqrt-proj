@@ -11,7 +11,7 @@ namespace Sqrt
         public string NumberText;
         public Form1()
         {
-            
+
             if (!string.IsNullOrEmpty(Properties.Settings.Default.Language))
             {
                 System.Threading.Thread.CurrentThread.CurrentUICulture =
@@ -34,7 +34,7 @@ namespace Sqrt
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
-        
+
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = new CultureInfo[]
@@ -73,7 +73,7 @@ namespace Sqrt
 
         private void label2_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ComplexSqrt_Click(object sender, EventArgs e)
@@ -82,11 +82,13 @@ namespace Sqrt
             var NumIM = textBoxIM.Text == "" ? 0.0 : double.Parse(textBoxIM.Text);
             var ComplexNum = new Complex(NumRE, NumIM);
 
-            textBoxRE.Text = Math.Round(double.Parse(Complex.Sqrt(ComplexNum).Real
-                .ToString()), int.Parse(numsAfterDot.Text)).ToString();
+            string numberSqrt(double number)
+            {
+                return Math.Round(number, int.Parse(numsAfterDot.Text)).ToString();
+            }
 
-            textBoxIM.Text = Math.Round(double.Parse(Complex.Sqrt(ComplexNum).Imaginary
-                .ToString()), int.Parse(numsAfterDot.Text)).ToString();
+            textBoxRE.Text = numberSqrt(Complex.Sqrt(ComplexNum).Real);
+            textBoxIM.Text = numberSqrt(Complex.Sqrt(ComplexNum).Imaginary);
         }
 
         private void ClearButtonRE_Click(object sender, EventArgs e)
@@ -106,7 +108,7 @@ namespace Sqrt
 
         private void textBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            
+
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != 8 && (textBoxIM.Text.Contains('.') || e.KeyChar != '.');
         }
 
@@ -119,7 +121,7 @@ namespace Sqrt
         {
             textBoxIM.Text = (-1 * double.Parse(textBoxIM.Text)).ToString();
         }
-        
+
 
         private void TextBoxRE_TextChanged(object sender, EventArgs e)
         {
