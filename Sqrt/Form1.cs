@@ -86,13 +86,13 @@ namespace Sqrt
             double NumIM = ConvertTextbox(textBoxIM.Text);
             Complex ComplexNum = new Complex(NumRE, NumIM);
 
-            string GetNumberSqrt(double number)
+            string GetSqrt(double number)
             {
                 return Math.Round(number, int.Parse(CountNumsAfterDot.Text)).ToString();
             }
 
-            textBoxRE.Text = GetNumberSqrt(Complex.Sqrt(ComplexNum).Real);
-            textBoxIM.Text = GetNumberSqrt(Complex.Sqrt(ComplexNum).Imaginary);
+            textBoxRE.Text = GetSqrt(Complex.Sqrt(ComplexNum).Real);
+            textBoxIM.Text = GetSqrt(Complex.Sqrt(ComplexNum).Imaginary);
         }
 
         private void ClearButtonRE_Click(object sender, EventArgs e)
