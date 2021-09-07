@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Globalization;
 using System.Numerics;
 using System.Windows.Forms;
@@ -62,9 +63,11 @@ namespace Sqrt
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
+
             if (MessageBox.Show(popuplang.ChangeLangRequest, popuplang.ChangeTitle, MessageBoxButtons.OK) == DialogResult.OK)
             {
                 Close();
+                Process.Start(Application.StartupPath + "\\Sqrt.exe");
             }
         }
 
