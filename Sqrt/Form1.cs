@@ -64,7 +64,7 @@ namespace Sqrt
         private void Button1_Click_1(object sender, EventArgs e)
         {
             Close();
-            Process.Start(Application.StartupPath + "\\Sqrt.exe");
+            Process.Start(Application.StartupPath + "\\Sqrt.NET.exe");
         }
 
         private void Label1_Click(object sender, EventArgs e)
