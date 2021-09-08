@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="popuplang - Копировать.Designer.cs">
-      <DependentUpon>popuplang.Designer.cs</DependentUpon>
+    <Compile Update="popuplang - Копировать.en-US.Designer.cs">
+      <DependentUpon>popuplang.en-US.resx</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>

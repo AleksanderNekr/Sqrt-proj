@@ -23,6 +23,7 @@ namespace Sqrt
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SquareRootProgram));
             this.label1 = new System.Windows.Forms.Label();
             this.DecPointDigitsCount = new System.Windows.Forms.NumericUpDown();
@@ -31,6 +32,7 @@ namespace Sqrt
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBoxRE = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ClearButtonRE = new System.Windows.Forms.Button();
             this.ClearButtonIM = new System.Windows.Forms.Button();
             this.textBoxIM = new System.Windows.Forms.TextBox();
@@ -38,6 +40,8 @@ namespace Sqrt
             this.label4 = new System.Windows.Forms.Label();
             this.plMinBtnRE = new System.Windows.Forms.Button();
             this.plMinBtnIM = new System.Windows.Forms.Button();
+            this.CopyBtnRE = new System.Windows.Forms.Button();
+            this.CopyBtnIM = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DecPointDigitsCount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +77,6 @@ namespace Sqrt
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -81,6 +84,7 @@ namespace Sqrt
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2"),
             resources.GetString("comboBox1.Items3")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
@@ -99,11 +103,17 @@ namespace Sqrt
             // 
             // textBoxRE
             // 
+            this.textBoxRE.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.textBoxRE, "textBoxRE");
             this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxRE.Name = "textBoxRE";
             this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
             this.textBoxRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxRE_KeyPress_1);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // ClearButtonRE
             // 
@@ -152,10 +162,26 @@ namespace Sqrt
             this.plMinBtnIM.UseVisualStyleBackColor = true;
             this.plMinBtnIM.Click += new System.EventHandler(this.PlMinBtnIM_Click);
             // 
+            // CopyBtnRE
+            // 
+            resources.ApplyResources(this.CopyBtnRE, "CopyBtnRE");
+            this.CopyBtnRE.Name = "CopyBtnRE";
+            this.CopyBtnRE.UseVisualStyleBackColor = true;
+            this.CopyBtnRE.Click += new System.EventHandler(this.CopyBtnRE_Click);
+            // 
+            // CopyBtnIM
+            // 
+            resources.ApplyResources(this.CopyBtnIM, "CopyBtnIM");
+            this.CopyBtnIM.Name = "CopyBtnIM";
+            this.CopyBtnIM.UseVisualStyleBackColor = true;
+            this.CopyBtnIM.Click += new System.EventHandler(this.CopyBtnIM_Click);
+            // 
             // SquareRootProgram
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.CopyBtnIM);
+            this.Controls.Add(this.CopyBtnRE);
             this.Controls.Add(this.plMinBtnIM);
             this.Controls.Add(this.plMinBtnRE);
             this.Controls.Add(this.label4);
@@ -196,6 +222,9 @@ namespace Sqrt
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button plMinBtnRE;
         private System.Windows.Forms.Button plMinBtnIM;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Button CopyBtnRE;
+        private System.Windows.Forms.Button CopyBtnIM;
     }
 }
 

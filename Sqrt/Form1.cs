@@ -63,12 +63,8 @@ namespace Sqrt
 
         private void Button1_Click_1(object sender, EventArgs e)
         {
-
-            if (MessageBox.Show(popuplang.ChangeLangRequest, popuplang.ChangeTitle, MessageBoxButtons.OK) == DialogResult.OK)
-            {
-                Close();
-                Process.Start(Application.StartupPath + "\\Sqrt.exe");
-            }
+            Close();
+            Process.Start(Application.StartupPath + "\\Sqrt.exe");
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -102,7 +98,7 @@ namespace Sqrt
 
         public bool PreventBadText(string text, char key)
         {
-            return !(char.IsDigit(key) || key == 8 || (!text.Contains('.') && key == '.'));
+            return !(char.IsDigit(key) || key == 8 || !text.Contains('.') && key == '.');
         }
 
         private void TextBoxRE_KeyPress_1(object sender, KeyPressEventArgs e) =>
@@ -133,6 +129,21 @@ namespace Sqrt
 
         private void Label4_Click(object sender, EventArgs e)
         {
+        }
+
+        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CopyBtnRE_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetData(DataFormats.Text, textBoxRE.Text);
+        }
+
+        private void CopyBtnIM_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetData(DataFormats.Text, textBoxIM.Text);
         }
     }
 }
