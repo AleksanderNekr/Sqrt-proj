@@ -150,7 +150,7 @@
   <data name="CopyBtnRE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
         oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
         Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
         e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
@@ -174,7 +174,7 @@
   <data name="CopyBtnIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
         oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
         Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
         e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
@@ -194,8 +194,5 @@
   </data>
   <data name="CopyBtnIM.Location" type="System.Drawing.Point, System.Drawing">
     <value>253, 150</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Extracting the root</value>
   </data>
 </root>

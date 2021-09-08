@@ -58,6 +58,15 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>323, 21</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Número de caracteres después del separador</value>
+  </data>
+  <data name="ComplexSqrt.Text" xml:space="preserve">
+    <value>Raíz de un número</value>
+  </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 32</value>
   </data>
@@ -121,6 +130,18 @@
         rkJggg==
 </value>
   </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 15</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Parte real</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 15</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Parte imaginaria</value>
+  </data>
   <data name="plMinBtnRE.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 84</value>
   </data>
@@ -130,7 +151,7 @@
   <data name="CopyBtnRE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        vQAADr0BR/uQrQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
         oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
         Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
         e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
@@ -151,7 +172,7 @@
   <data name="CopyBtnIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        vQAADr0BR/uQrQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
         oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
         Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
         e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
