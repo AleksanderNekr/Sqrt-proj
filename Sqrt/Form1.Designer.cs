@@ -77,6 +77,7 @@ namespace Sqrt
             // 
             // comboBox1
             // 
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -84,7 +85,6 @@ namespace Sqrt
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2"),
             resources.GetString("comboBox1.Items3")});
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
@@ -103,8 +103,8 @@ namespace Sqrt
             // 
             // textBoxRE
             // 
-            this.textBoxRE.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.textBoxRE, "textBoxRE");
+            this.textBoxRE.ContextMenuStrip = this.contextMenuStrip1;
             this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxRE.Name = "textBoxRE";
             this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
@@ -112,8 +112,8 @@ namespace Sqrt
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
             // 
             // ClearButtonRE
             // 
@@ -131,8 +131,8 @@ namespace Sqrt
             // 
             // textBoxIM
             // 
-            this.textBoxIM.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.textBoxIM, "textBoxIM");
+            this.textBoxIM.ContextMenuStrip = this.contextMenuStrip1;
             this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxIM.Name = "textBoxIM";
             this.textBoxIM.TextChanged += new System.EventHandler(this.TextBoxIM_TextChanged);
