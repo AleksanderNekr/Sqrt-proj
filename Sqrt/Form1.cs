@@ -85,9 +85,8 @@ namespace Sqrt
 
             string GetSqrt(double number)
             {
-                return Math.Round(number, int.Parse(DecPointDigitsCount.Text)).ToString();
+                return Math.Round(number, int.Parse(DecPointDigitsCount.Text)).ToString($"F{DecPointDigitsCount.Text}");
             }
-
             textBoxRE.Text = GetSqrt(Complex.Sqrt(ComplexNum).Real);
             textBoxIM.Text = GetSqrt(Complex.Sqrt(ComplexNum).Imaginary);
         }
@@ -107,7 +106,12 @@ namespace Sqrt
         private void TextBoxIM_KeyPress_1(object sender, KeyPressEventArgs e) =>
             e.Handled = PreventBadText(textBoxIM.Text, e.KeyChar);
 
-        public string ChangeSign(string text) => (-1 * double.Parse(text)).ToString();
+        private void TextBoxBI_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = PreventBadText(TextBoxBI.Text, e.KeyChar);
+        }
+
+        public string ChangeSign(string text) => (-1 * double.Parse(text)).ToString($"F{DecPointDigitsCount.Text}");
 
         private void PlMinBtnRE_Click(object sender, EventArgs e) =>
             textBoxRE.Text = ChangeSign(textBoxRE.Text);
@@ -115,11 +119,19 @@ namespace Sqrt
         private void PlMinBtnIM_Click(object sender, EventArgs e) =>
             textBoxIM.Text = ChangeSign(textBoxIM.Text);
 
+        private void PlMinBtnBI_Click(object sender, EventArgs e)
+        {
+        }
+
         private void TextBoxRE_TextChanged(object sender, EventArgs e)
         {
         }
 
         private void TextBoxIM_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void TextBoxBI_TextChanged(object sender, EventArgs e)
         {
         }
 
@@ -145,5 +157,6 @@ namespace Sqrt
         {
             Clipboard.SetData(DataFormats.Text, textBoxIM.Text);
         }
+
     }
 }

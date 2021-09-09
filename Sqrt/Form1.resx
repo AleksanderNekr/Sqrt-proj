@@ -57,49 +57,199 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ComplexSqrt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>455, 19</value>
   </data>
-  <data name="&gt;&gt;textBoxIM.Name" xml:space="preserve">
-    <value>textBoxIM</value>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 21</value>
   </data>
-  <data name="&gt;&gt;DecPointDigitsCount.ZOrder" xml:space="preserve">
-    <value>15</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Количество знаков после разделителя</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="textBoxIM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 19pt</value>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="plMinBtnRE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 41</value>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="DecPointDigitsCount.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15pt</value>
+  </data>
+  <data name="DecPointDigitsCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>401, 12</value>
+  </data>
+  <data name="DecPointDigitsCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 34</value>
+  </data>
+  <data name="DecPointDigitsCount.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;DecPointDigitsCount.Name" xml:space="preserve">
+    <value>DecPointDigitsCount</value>
+  </data>
+  <data name="&gt;&gt;DecPointDigitsCount.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DecPointDigitsCount.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DecPointDigitsCount.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ComplexSqrt.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15pt</value>
+  </data>
+  <data name="ComplexSqrt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 83</value>
+  </data>
+  <data name="ComplexSqrt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 103</value>
+  </data>
+  <data name="ComplexSqrt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="ComplexSqrt.Text" xml:space="preserve">
+    <value>Корень из числа</value>
+  </data>
+  <data name="&gt;&gt;ComplexSqrt.Name" xml:space="preserve">
+    <value>ComplexSqrt</value>
+  </data>
+  <data name="&gt;&gt;ComplexSqrt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ComplexSqrt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComplexSqrt.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>Español</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>中国人</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 12</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 23</value>
+  </data>
   <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="CopyBtnIM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 31</value>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 15</value>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CopyBtnRE.Name" xml:space="preserve">
-    <value>CopyBtnRE</value>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;CopyBtnRE.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Мнимая часть</value>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 5</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 11</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 4</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
+    <value>contextMenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxRE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 19pt</value>
+  </data>
+  <data name="textBoxRE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 83</value>
+  </data>
+  <data name="textBoxRE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 41</value>
+  </data>
+  <data name="textBoxRE.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="textBoxRE.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;textBoxRE.Name" xml:space="preserve">
+    <value>textBoxRE</value>
+  </data>
+  <data name="&gt;&gt;textBoxRE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBoxRE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;textBoxRE.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="ClearButtonRE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -122,243 +272,30 @@
         rkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;CopyBtnRE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CopyBtnRE.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="plMinBtnRE.Text" xml:space="preserve">
-    <value>±</value>
-  </data>
-  <data name="&gt;&gt;DecPointDigitsCount.Name" xml:space="preserve">
-    <value>DecPointDigitsCount</value>
-  </data>
-  <data name="textBoxIM.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="comboBox1.Items3" xml:space="preserve">
-    <value>中国人</value>
-  </data>
-  <data name="CopyBtnRE.Text" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="textBoxIM.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnIM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CopyBtnIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
-        oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
-        Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
-        e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
-        Eezv72Nvb0+wtbUlz5+fHxdfBRGJiIiwJExMTKC/v1+Cl5aWiiB9nJGamoqLiwuTr4pnP9cQFhZmMhqJ
-        d3d3+Pr6Ql5engQLCQlBRkYGsrOzkZOTg6ysLKSlpclZYmIiTk9PdV+3Iq+vr1hcXMTCwoIOdh9TQl5c
-        XByur6/dXiYlJUU48fHxOD4+dhVhQWk8OjoSohElJSUYHx+XdVVVlSmwUUx1KUGhk5MTnWe3OURub29R
-        UVGBsrIyQXl5OQYHBzEyMiLO9fX1uiNhFMnNzdVFiISEBJydncmZfe9I19PTEwYGBiSwwtLSkouIMbhC
-        QUGBSYRISkrC1dUV1w4R5tJIIoqLi70SWVtbQ2VlJaqrq1FbW4vMzEzxKSoq4tMhcn9/j9bWVrS1tQm4
-        np6exvDwsElkdXUVXV1d6OjoEHR2dspe2R4eHuQSLIOvr++fCGcUnXnY3NyMpqYmHVNTU7oIRw95LS0t
-        srcCG4g8xv3PpslQpNGqu5xF1tfX0dfXh97eXgHXCtw/Pj66isTGxorx+fkZY2NjGB0d1cHUONdkbm5O
-        uo+dSLALuT88PJRzBV2EYyI4OFhmj7uCcu8swpSKsxN4IaOvLqJGAmeUtyIHBweYn583TQbu2ThGX11k
-        dnZWFvw4UbCwsFBeLM4kgt8TJaJqwhpxdikOwb2yXV5emkV406GhIURGRv4ZnMDCszZc/9/u4nQXGzcE
-        v4q7u7vY2NiQoajAqcpmILmhoUG4Nzc3wrUCY5EXExNjFiGsaqJSyk7yxDPaPj4+5JPt7+/vncj5+bnU
-        jJOB74gVT9k+Pz/R2NgoF2ONpCaeHBRqamr+frodFGO++eTo4FOBLzb/N5DHfz9Mv9ci39/f6OnpQXJy
-        si5mBaaIv4ACNpsN/wCsRodk3tBhqwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ClearButtonIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 145</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnRE.Name" xml:space="preserve">
-    <value>plMinBtnRE</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CopyBtnIM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ClearButtonRE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="comboBox1.Items2" xml:space="preserve">
-    <value>Español</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;textBoxRE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DecPointDigitsCount.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="textBoxIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 145</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnIM.Name" xml:space="preserve">
-    <value>plMinBtnIM</value>
-  </data>
-  <data name="textBoxRE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 83</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="CopyBtnRE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
-        oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
-        Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
-        e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
-        Eezv72Nvb0+wtbUlz5+fHxdfBRGJiIiwJExMTKC/v1+Cl5aWiiB9nJGamoqLiwuTr4pnP9cQFhZmMhqJ
-        d3d3+Pr6Ql5engQLCQlBRkYGsrOzkZOTg6ysLKSlpclZYmIiTk9PdV+3Iq+vr1hcXMTCwoIOdh9TQl5c
-        XByur6/dXiYlJUU48fHxOD4+dhVhQWk8OjoSohElJSUYHx+XdVVVlSmwUUx1KUGhk5MTnWe3OURub29R
-        UVGBsrIyQXl5OQYHBzEyMiLO9fX1uiNhFMnNzdVFiISEBJydncmZfe9I19PTEwYGBiSwwtLSkouIMbhC
-        QUGBSYRISkrC1dUV1w4R5tJIIoqLi70SWVtbQ2VlJaqrq1FbW4vMzEzxKSoq4tMhcn9/j9bWVrS1tQm4
-        np6exvDwsElkdXUVXV1d6OjoEHR2dspe2R4eHuQSLIOvr++fCGcUnXnY3NyMpqYmHVNTU7oIRw95LS0t
-        srcCG4g8xv3PpslQpNGqu5xF1tfX0dfXh97eXgHXCtw/Pj66isTGxorx+fkZY2NjGB0d1cHUONdkbm5O
-        uo+dSLALuT88PJRzBV2EYyI4OFhmj7uCcu8swpSKsxN4IaOvLqJGAmeUtyIHBweYn583TQbu2ThGX11k
-        dnZWFvw4UbCwsFBeLM4kgt8TJaJqwhpxdikOwb2yXV5emkV406GhIURGRv4ZnMDCszZc/9/u4nQXGzcE
-        v4q7u7vY2NiQoajAqcpmILmhoUG4Nzc3wrUCY5EXExNjFiGsaqJSyk7yxDPaPj4+5JPt7+/vncj5+bnU
-        jJOB74gVT9k+Pz/R2NgoF2ONpCaeHBRqamr+frodFGO++eTo4FOBLzb/N5DHfz9Mv9ci39/f6OnpQXJy
-        si5mBaaIv4ACNpsN/wCsRodk3tBhqwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="DecPointDigitsCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 34</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Действительная часть</value>
-  </data>
-  <data name="&gt;&gt;DecPointDigitsCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ClearButtonIM.Name" xml:space="preserve">
-    <value>ClearButtonIM</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;CopyBtnIM.Name" xml:space="preserve">
-    <value>CopyBtnIM</value>
-  </data>
-  <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 4</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ClearButtonIM.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="CopyBtnIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 150</value>
-  </data>
-  <data name="textBoxRE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 41</value>
-  </data>
-  <data name="plMinBtnIM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 145</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>SquareRootProgram</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>349, 127</value>
-  </data>
-  <data name="&gt;&gt;textBoxRE.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
   <data name="ClearButtonRE.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="ClearButtonRE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>707, 83</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="ClearButtonRE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 41</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 21</value>
+  <data name="ClearButtonRE.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="comboBox1.Items1" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="&gt;&gt;CopyBtnRE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Количество знаков после разделителя</value>
+  <data name="&gt;&gt;ClearButtonRE.Name" xml:space="preserve">
+    <value>ClearButtonRE</value>
   </data>
   <data name="&gt;&gt;ClearButtonRE.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="plMinBtnRE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 17pt</value>
-  </data>
-  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 23</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnRE.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ClearButtonRE.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>161, 11</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="plMinBtnIM.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 17pt</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ClearButtonRE.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="ClearButtonIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -381,223 +318,283 @@
         rkJggg==
 </value>
   </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 5</value>
+  <data name="ClearButtonIM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;DecPointDigitsCount.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="CopyBtnRE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>251, 88</value>
-  </data>
-  <data name="&gt;&gt;ClearButtonIM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="DecPointDigitsCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>401, 12</value>
-  </data>
-  <data name="textBoxRE.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
-    <value>contextMenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="ComplexSqrt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15pt</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnIM.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>128, 15</value>
-  </data>
-  <data name="textBoxRE.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 19pt</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnIM.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ClearButtonIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>707, 145</value>
   </data>
   <data name="ClearButtonIM.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 41</value>
   </data>
-  <data name="&gt;&gt;plMinBtnRE.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ClearButtonIM.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;textBoxIM.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ClearButtonIM.Name" xml:space="preserve">
+    <value>ClearButtonIM</value>
+  </data>
+  <data name="&gt;&gt;ClearButtonIM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ClearButtonIM.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ClearButtonIM.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;CopyBtnIM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="textBoxIM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 19pt</value>
   </data>
-  <data name="&gt;&gt;ComplexSqrt.Name" xml:space="preserve">
-    <value>ComplexSqrt</value>
-  </data>
-  <data name="CopyBtnIM.Text" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;textBoxIM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="plMinBtnIM.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;ClearButtonRE.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;plMinBtnRE.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="comboBox1.Items" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="ClearButtonRE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>707, 83</value>
-  </data>
-  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
-    <value>comboBox1</value>
-  </data>
-  <data name="CopyBtnIM.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ClearButtonIM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="textBoxIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 145</value>
   </data>
   <data name="textBoxIM.Size" type="System.Drawing.Size, System.Drawing">
     <value>352, 41</value>
   </data>
-  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 12</value>
+  <data name="textBoxIM.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="ComplexSqrt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 83</value>
+  <data name="textBoxIM.Text" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;textBoxRE.Type" xml:space="preserve">
+  <data name="&gt;&gt;textBoxIM.Name" xml:space="preserve">
+    <value>textBoxIM</value>
+  </data>
+  <data name="&gt;&gt;textBoxIM.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DecPointDigitsCount.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15pt</value>
-  </data>
-  <data name="textBoxRE.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Sqrt.NET</value>
-  </data>
-  <data name="plMinBtnRE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>292, 83</value>
-  </data>
-  <data name="ComplexSqrt.Text" xml:space="preserve">
-    <value>Корень из числа</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>455, 19</value>
-  </data>
-  <data name="ClearButtonIM.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="ComplexSqrt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 103</value>
-  </data>
-  <data name="ClearButtonRE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 41</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="plMinBtnIM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 41</value>
-  </data>
-  <data name="plMinBtnRE.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;CopyBtnIM.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxRE.Name" xml:space="preserve">
-    <value>textBoxRE</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>767, 301</value>
-  </data>
-  <data name="&gt;&gt;CopyBtnIM.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ComplexSqrt.Parent" xml:space="preserve">
+  <data name="&gt;&gt;textBoxIM.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBoxIM.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;ClearButtonRE.Name" xml:space="preserve">
-    <value>ClearButtonRE</value>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="ComplexSqrt.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="CopyBtnRE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 31</value>
-  </data>
-  <data name="plMinBtnIM.Text" xml:space="preserve">
-    <value>±</value>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>349, 65</value>
   </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 15</value>
   </data>
-  <data name="ClearButtonRE.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
   </data>
-  <metadata name="contextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>ru-RU</value>
-  </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Действительная часть</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 127</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Мнимая часть</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="plMinBtnRE.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 17pt</value>
+  </data>
+  <data name="plMinBtnRE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 83</value>
+  </data>
+  <data name="plMinBtnRE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 41</value>
+  </data>
+  <data name="plMinBtnRE.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="plMinBtnRE.Text" xml:space="preserve">
+    <value>±</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnRE.Name" xml:space="preserve">
+    <value>plMinBtnRE</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnRE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnRE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnRE.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="plMinBtnIM.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 17pt</value>
+  </data>
+  <data name="plMinBtnIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>292, 145</value>
+  </data>
+  <data name="plMinBtnIM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 41</value>
+  </data>
+  <data name="plMinBtnIM.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="plMinBtnIM.Text" xml:space="preserve">
+    <value>±</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnIM.Name" xml:space="preserve">
+    <value>plMinBtnIM</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnIM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnIM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;plMinBtnIM.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="CopyBtnRE.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
+        Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
+        e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
+        Eezv72Nvb0+wtbUlz5+fHxdfBRGJiIiwJExMTKC/v1+Cl5aWiiB9nJGamoqLiwuTr4pnP9cQFhZmMhqJ
+        d3d3+Pr6Ql5engQLCQlBRkYGsrOzkZOTg6ysLKSlpclZYmIiTk9PdV+3Iq+vr1hcXMTCwoIOdh9TQl5c
+        XByur6/dXiYlJUU48fHxOD4+dhVhQWk8OjoSohElJSUYHx+XdVVVlSmwUUx1KUGhk5MTnWe3OURub29R
+        UVGBsrIyQXl5OQYHBzEyMiLO9fX1uiNhFMnNzdVFiISEBJydncmZfe9I19PTEwYGBiSwwtLSkouIMbhC
+        QUGBSYRISkrC1dUV1w4R5tJIIoqLi70SWVtbQ2VlJaqrq1FbW4vMzEzxKSoq4tMhcn9/j9bWVrS1tQm4
+        np6exvDwsElkdXUVXV1d6OjoEHR2dspe2R4eHuQSLIOvr++fCGcUnXnY3NyMpqYmHVNTU7oIRw95LS0t
+        srcCG4g8xv3PpslQpNGqu5xF1tfX0dfXh97eXgHXCtw/Pj66isTGxorx+fkZY2NjGB0d1cHUONdkbm5O
+        uo+dSLALuT88PJRzBV2EYyI4OFhmj7uCcu8swpSKsxN4IaOvLqJGAmeUtyIHBweYn583TQbu2ThGX11k
+        dnZWFvw4UbCwsFBeLM4kgt8TJaJqwhpxdikOwb2yXV5emkV406GhIURGRv4ZnMDCszZc/9/u4nQXGzcE
+        v4q7u7vY2NiQoajAqcpmILmhoUG4Nzc3wrUCY5EXExNjFiGsaqJSyk7yxDPaPj4+5JPt7+/vncj5+bnU
+        jJOB74gVT9k+Pz/R2NgoF2ONpCaeHBRqamr+frodFGO++eTo4FOBLzb/N5DHfz9Mv9ci39/f6OnpQXJy
+        si5mBaaIv4ACNpsN/wCsRodk3tBhqwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="CopyBtnRE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 88</value>
+  </data>
+  <data name="CopyBtnRE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 31</value>
+  </data>
+  <data name="CopyBtnRE.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="CopyBtnRE.Text" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnRE.Name" xml:space="preserve">
+    <value>CopyBtnRE</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnRE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnRE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnRE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CopyBtnIM.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAA4RJREFUSEuVVssrfV8UP4S8I0RCxkYGYiTPKCNmJohIUV4DBh4DpTBAeYQMPAYY
+        oUwYKBRCXomQR0TK2/0DPt/7WX773HPuved2f4NPZ++1P2t99l1rnXWuZrPZsLm5ifz8fAQGBkLTNB0+
+        Pj5IT0/H9vY2yFP4/f0VeGvTKKCCBwQEIDo6GlFRUQgPDxdQKCgoCCsrK14FdGfT+AsoUFdXh/f3dxdi
+        e3u7nPMiy8vLJmcjz5NN4y39/Pzw9vbm1mFmZkZPX2hoKHZ2dtzyPNnsvpqkx2g0EicnJ+US3d3deHl5
+        Eezv72Nvb0+wtbUlz5+fHxdfBRGJiIiwJExMTKC/v1+Cl5aWiiB9nJGamoqLiwuTr4pnP9cQFhZmMhqJ
+        d3d3+Pr6Ql5engQLCQlBRkYGsrOzkZOTg6ysLKSlpclZYmIiTk9PdV+3Iq+vr1hcXMTCwoIOdh9TQl5c
+        XByur6/dXiYlJUU48fHxOD4+dhVhQWk8OjoSohElJSUYHx+XdVVVlSmwUUx1KUGhk5MTnWe3OURub29R
+        UVGBsrIyQXl5OQYHBzEyMiLO9fX1uiNhFMnNzdVFiISEBJydncmZfe9I19PTEwYGBiSwwtLSkouIMbhC
+        QUGBSYRISkrC1dUV1w4R5tJIIoqLi70SWVtbQ2VlJaqrq1FbW4vMzEzxKSoq4tMhcn9/j9bWVrS1tQm4
+        np6exvDwsElkdXUVXV1d6OjoEHR2dspe2R4eHuQSLIOvr++fCGcUnXnY3NyMpqYmHVNTU7oIRw95LS0t
+        srcCG4g8xv3PpslQpNGqu5xF1tfX0dfXh97eXgHXCtw/Pj66isTGxorx+fkZY2NjGB0d1cHUONdkbm5O
+        uo+dSLALuT88PJRzBV2EYyI4OFhmj7uCcu8swpSKsxN4IaOvLqJGAmeUtyIHBweYn583TQbu2ThGX11k
+        dnZWFvw4UbCwsFBeLM4kgt8TJaJqwhpxdikOwb2yXV5emkV406GhIURGRv4ZnMDCszZc/9/u4nQXGzcE
+        v4q7u7vY2NiQoajAqcpmILmhoUG4Nzc3wrUCY5EXExNjFiGsaqJSyk7yxDPaPj4+5JPt7+/vncj5+bnU
+        jJOB74gVT9k+Pz/R2NgoF2ONpCaeHBRqamr+frodFGO++eTo4FOBLzb/N5DHfz9Mv9ci39/f6OnpQXJy
+        si5mBaaIv4ACNpsN/wCsRodk3tBhqwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="CopyBtnIM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CopyBtnIM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 150</value>
+  </data>
+  <data name="CopyBtnIM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 31</value>
+  </data>
+  <data name="CopyBtnIM.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="CopyBtnIM.Text" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnIM.Name" xml:space="preserve">
+    <value>CopyBtnIM</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnIM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnIM.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CopyBtnIM.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>767, 245</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Sqrt.NET</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SquareRootProgram</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
