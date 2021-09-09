@@ -61,7 +61,8 @@ namespace Sqrt
 
             string GetSqrt(double number)
             {
-                return Math.Round(number, int.Parse(DecPointDigitsCount.Text)).ToString($"F{DecPointDigitsCount.Text}");
+                return Math.Round(number, int.Parse(DecPointDigitsCount.Text))
+                    .ToString($"F{DecPointDigitsCount.Text}");
             }
             textBoxRE.Text = GetSqrt(Complex.Sqrt(ComplexNum).Real);
             textBoxIM.Text = GetSqrt(Complex.Sqrt(ComplexNum).Imaginary);
