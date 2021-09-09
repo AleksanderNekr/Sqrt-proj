@@ -106,11 +106,6 @@ namespace Sqrt
         private void TextBoxIM_KeyPress_1(object sender, KeyPressEventArgs e) =>
             e.Handled = PreventBadText(textBoxIM.Text, e.KeyChar);
 
-        private void TextBoxBI_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = PreventBadText(TextBoxBI.Text, e.KeyChar);
-        }
-
         public string ChangeSign(string text) => (-1 * double.Parse(text)).ToString($"F{DecPointDigitsCount.Text}");
 
         private void PlMinBtnRE_Click(object sender, EventArgs e) =>
