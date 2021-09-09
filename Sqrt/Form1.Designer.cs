@@ -49,7 +49,6 @@ namespace Sqrt
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // DecPointDigitsCount
             // 
@@ -66,7 +65,6 @@ namespace Sqrt
             0,
             0,
             0});
-            this.DecPointDigitsCount.ValueChanged += new System.EventHandler(this.NumsAfterDot_ValueChanged);
             // 
             // ComplexSqrt
             // 
@@ -77,7 +75,6 @@ namespace Sqrt
             // 
             // comboBox1
             // 
-            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -85,14 +82,13 @@ namespace Sqrt
             resources.GetString("comboBox1.Items1"),
             resources.GetString("comboBox1.Items2"),
             resources.GetString("comboBox1.Items3")});
+            resources.ApplyResources(this.comboBox1, "comboBox1");
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // button1
             // 
@@ -103,17 +99,16 @@ namespace Sqrt
             // 
             // textBoxRE
             // 
-            resources.ApplyResources(this.textBoxRE, "textBoxRE");
             this.textBoxRE.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.textBoxRE, "textBoxRE");
             this.textBoxRE.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxRE.Name = "textBoxRE";
-            this.textBoxRE.TextChanged += new System.EventHandler(this.TextBoxRE_TextChanged);
             this.textBoxRE.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxRE_KeyPress_1);
             // 
             // contextMenuStrip1
             // 
-            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             this.contextMenuStrip1.Name = "contextMenuStrip1";
+            resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
             // ClearButtonRE
             // 
@@ -131,11 +126,10 @@ namespace Sqrt
             // 
             // textBoxIM
             // 
-            resources.ApplyResources(this.textBoxIM, "textBoxIM");
             this.textBoxIM.ContextMenuStrip = this.contextMenuStrip1;
+            resources.ApplyResources(this.textBoxIM, "textBoxIM");
             this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxIM.Name = "textBoxIM";
-            this.textBoxIM.TextChanged += new System.EventHandler(this.TextBoxIM_TextChanged);
             this.textBoxIM.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxIM_KeyPress_1);
             // 
             // label3
@@ -147,21 +141,20 @@ namespace Sqrt
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // plMinBtnRE
             // 
             resources.ApplyResources(this.plMinBtnRE, "plMinBtnRE");
             this.plMinBtnRE.Name = "plMinBtnRE";
             this.plMinBtnRE.UseVisualStyleBackColor = true;
-            this.plMinBtnRE.Click += new System.EventHandler(this.PlMinBtnRE_Click);
+            this.plMinBtnRE.Click += new System.EventHandler(this.PlusMinusBtnRE_Click);
             // 
             // plMinBtnIM
             // 
             resources.ApplyResources(this.plMinBtnIM, "plMinBtnIM");
             this.plMinBtnIM.Name = "plMinBtnIM";
             this.plMinBtnIM.UseVisualStyleBackColor = true;
-            this.plMinBtnIM.Click += new System.EventHandler(this.PlMinBtnIM_Click);
+            this.plMinBtnIM.Click += new System.EventHandler(this.PlusMinusBtnIM_Click);
             // 
             // CopyBtnRE
             // 

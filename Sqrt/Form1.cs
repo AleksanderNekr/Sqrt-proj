@@ -20,22 +20,6 @@ namespace Sqrt
             InitializeComponent();
         }
 
-        private void NumsAfterDot_ValueChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolStripButton1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolStripComboBox1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             comboBox1.DataSource = new CultureInfo[]
@@ -67,14 +51,6 @@ namespace Sqrt
             Process.Start(Application.StartupPath + "\\Sqrt.NET.exe");
         }
 
-        private void Label1_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-        }
-
         private void ComplexSqrt_Click(object sender, EventArgs e)
         {
             double ConvertTextbox(string text) => text == "" ? 0.0 : double.Parse(text);
@@ -100,47 +76,29 @@ namespace Sqrt
             return !(char.IsDigit(key) || key == 8 || !text.Contains('.') && key == '.');
         }
 
-        private void TextBoxRE_KeyPress_1(object sender, KeyPressEventArgs e) =>
+        private void TextBoxRE_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
             e.Handled = PreventBadText(textBoxRE.Text, e.KeyChar);
+        }
 
-        private void TextBoxIM_KeyPress_1(object sender, KeyPressEventArgs e) =>
+        private void TextBoxIM_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
             e.Handled = PreventBadText(textBoxIM.Text, e.KeyChar);
+        }
 
-        public string ChangeSign(string text) => (-1 * double.Parse(text)).ToString($"F{DecPointDigitsCount.Text}");
+        public string ChangeSign(string text)
+        {
+            return (-1 * double.Parse(text)).ToString($"F{DecPointDigitsCount.Text}");
+        }
 
-        private void PlMinBtnRE_Click(object sender, EventArgs e) =>
+        private void PlusMinusBtnRE_Click(object sender, EventArgs e)
+        {
             textBoxRE.Text = ChangeSign(textBoxRE.Text);
+        }
 
-        private void PlMinBtnIM_Click(object sender, EventArgs e) =>
+        private void PlusMinusBtnIM_Click(object sender, EventArgs e)
+        {
             textBoxIM.Text = ChangeSign(textBoxIM.Text);
-
-        private void PlMinBtnBI_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void TextBoxRE_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void TextBoxIM_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void TextBoxBI_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void ToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void CopyBtnRE_Click(object sender, EventArgs e)
@@ -152,6 +110,5 @@ namespace Sqrt
         {
             Clipboard.SetData(DataFormats.Text, textBoxIM.Text);
         }
-
     }
 }
