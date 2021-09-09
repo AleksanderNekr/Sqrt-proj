@@ -131,6 +131,7 @@ namespace Sqrt
             // 
             // textBoxIM
             // 
+            this.textBoxIM.ContextMenuStrip = this.contextMenuStrip1;
             resources.ApplyResources(this.textBoxIM, "textBoxIM");
             this.textBoxIM.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBoxIM.Name = "textBoxIM";
