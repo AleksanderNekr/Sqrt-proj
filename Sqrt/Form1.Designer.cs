@@ -42,6 +42,21 @@ namespace Sqrt
             this.plMinBtnIM = new System.Windows.Forms.Button();
             this.CopyBtnRE = new System.Windows.Forms.Button();
             this.CopyBtnIM = new System.Windows.Forms.Button();
+            this.TextBoxAnalityc = new System.Windows.Forms.TextBox();
+            this.ClearBtnAnalityc = new System.Windows.Forms.Button();
+            this.AnalyticSqrt = new System.Windows.Forms.Button();
+            this.SinBtn = new System.Windows.Forms.Button();
+            this.CosBtn = new System.Windows.Forms.Button();
+            this.TanBtn = new System.Windows.Forms.Button();
+            this.CotBtn = new System.Windows.Forms.Button();
+            this.XBtn = new System.Windows.Forms.Button();
+            this.Pow2Btn = new System.Windows.Forms.Button();
+            this.BtnMinus = new System.Windows.Forms.Button();
+            this.BtnPlus = new System.Windows.Forms.Button();
+            this.BtnLeftBr = new System.Windows.Forms.Button();
+            this.BtnRightBr = new System.Windows.Forms.Button();
+            this.BtnMult = new System.Windows.Forms.Button();
+            this.BtnDiv = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DecPointDigitsCount)).BeginInit();
             this.SuspendLayout();
             // 
@@ -170,10 +185,130 @@ namespace Sqrt
             this.CopyBtnIM.UseVisualStyleBackColor = true;
             this.CopyBtnIM.Click += new System.EventHandler(this.CopyBtnIM_Click);
             // 
+            // TextBoxAnalityc
+            // 
+            resources.ApplyResources(this.TextBoxAnalityc, "TextBoxAnalityc");
+            this.TextBoxAnalityc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.TextBoxAnalityc.Name = "TextBoxAnalityc";
+            this.TextBoxAnalityc.ReadOnly = true;
+            // 
+            // ClearBtnAnalityc
+            // 
+            resources.ApplyResources(this.ClearBtnAnalityc, "ClearBtnAnalityc");
+            this.ClearBtnAnalityc.Name = "ClearBtnAnalityc";
+            this.ClearBtnAnalityc.UseVisualStyleBackColor = true;
+            this.ClearBtnAnalityc.Click += new System.EventHandler(this.ClearBtnAnalityc_Click);
+            // 
+            // AnalyticSqrt
+            // 
+            resources.ApplyResources(this.AnalyticSqrt, "AnalyticSqrt");
+            this.AnalyticSqrt.Name = "AnalyticSqrt";
+            this.AnalyticSqrt.UseVisualStyleBackColor = true;
+            this.AnalyticSqrt.Click += new System.EventHandler(this.AnalyticSqrt_Click);
+            // 
+            // SinBtn
+            // 
+            resources.ApplyResources(this.SinBtn, "SinBtn");
+            this.SinBtn.Name = "SinBtn";
+            this.SinBtn.UseVisualStyleBackColor = true;
+            this.SinBtn.Click += new System.EventHandler(this.SinBtn_Click);
+            // 
+            // CosBtn
+            // 
+            resources.ApplyResources(this.CosBtn, "CosBtn");
+            this.CosBtn.Name = "CosBtn";
+            this.CosBtn.UseVisualStyleBackColor = true;
+            this.CosBtn.Click += new System.EventHandler(this.CosBtn_Click);
+            // 
+            // TanBtn
+            // 
+            resources.ApplyResources(this.TanBtn, "TanBtn");
+            this.TanBtn.Name = "TanBtn";
+            this.TanBtn.UseVisualStyleBackColor = true;
+            this.TanBtn.Click += new System.EventHandler(this.TanBtn_Click);
+            // 
+            // CotBtn
+            // 
+            resources.ApplyResources(this.CotBtn, "CotBtn");
+            this.CotBtn.Name = "CotBtn";
+            this.CotBtn.UseVisualStyleBackColor = true;
+            this.CotBtn.Click += new System.EventHandler(this.CotBtn_Click);
+            // 
+            // XBtn
+            // 
+            resources.ApplyResources(this.XBtn, "XBtn");
+            this.XBtn.Name = "XBtn";
+            this.XBtn.UseVisualStyleBackColor = true;
+            this.XBtn.Click += new System.EventHandler(this.Button2_Click);
+            // 
+            // Pow2Btn
+            // 
+            resources.ApplyResources(this.Pow2Btn, "Pow2Btn");
+            this.Pow2Btn.Name = "Pow2Btn";
+            this.Pow2Btn.UseVisualStyleBackColor = true;
+            this.Pow2Btn.Click += new System.EventHandler(this.Pow2Btn_Click);
+            // 
+            // BtnMinus
+            // 
+            resources.ApplyResources(this.BtnMinus, "BtnMinus");
+            this.BtnMinus.Name = "BtnMinus";
+            this.BtnMinus.UseVisualStyleBackColor = true;
+            this.BtnMinus.Click += new System.EventHandler(this.BtnMinus_Click);
+            // 
+            // BtnPlus
+            // 
+            resources.ApplyResources(this.BtnPlus, "BtnPlus");
+            this.BtnPlus.Name = "BtnPlus";
+            this.BtnPlus.UseVisualStyleBackColor = true;
+            this.BtnPlus.Click += new System.EventHandler(this.BtnPlus_Click);
+            // 
+            // BtnLeftBr
+            // 
+            resources.ApplyResources(this.BtnLeftBr, "BtnLeftBr");
+            this.BtnLeftBr.Name = "BtnLeftBr";
+            this.BtnLeftBr.UseVisualStyleBackColor = true;
+            this.BtnLeftBr.Click += new System.EventHandler(this.BtnLeftBr_Click);
+            // 
+            // BtnRightBr
+            // 
+            resources.ApplyResources(this.BtnRightBr, "BtnRightBr");
+            this.BtnRightBr.Name = "BtnRightBr";
+            this.BtnRightBr.UseVisualStyleBackColor = true;
+            this.BtnRightBr.Click += new System.EventHandler(this.BtnRightBr_Click);
+            // 
+            // BtnMult
+            // 
+            resources.ApplyResources(this.BtnMult, "BtnMult");
+            this.BtnMult.Name = "BtnMult";
+            this.BtnMult.UseVisualStyleBackColor = true;
+            this.BtnMult.Click += new System.EventHandler(this.BtnMult_Click);
+            // 
+            // BtnDiv
+            // 
+            resources.ApplyResources(this.BtnDiv, "BtnDiv");
+            this.BtnDiv.Name = "BtnDiv";
+            this.BtnDiv.UseVisualStyleBackColor = true;
+            this.BtnDiv.Click += new System.EventHandler(this.BtnDiv_Click);
+            // 
             // SquareRootProgram
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BtnDiv);
+            this.Controls.Add(this.BtnMult);
+            this.Controls.Add(this.BtnRightBr);
+            this.Controls.Add(this.BtnLeftBr);
+            this.Controls.Add(this.BtnPlus);
+            this.Controls.Add(this.BtnMinus);
+            this.Controls.Add(this.Pow2Btn);
+            this.Controls.Add(this.XBtn);
+            this.Controls.Add(this.CotBtn);
+            this.Controls.Add(this.TanBtn);
+            this.Controls.Add(this.CosBtn);
+            this.Controls.Add(this.SinBtn);
+            this.Controls.Add(this.AnalyticSqrt);
+            this.Controls.Add(this.ClearBtnAnalityc);
+            this.Controls.Add(this.TextBoxAnalityc);
             this.Controls.Add(this.CopyBtnIM);
             this.Controls.Add(this.CopyBtnRE);
             this.Controls.Add(this.plMinBtnIM);
@@ -219,6 +354,21 @@ namespace Sqrt
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button CopyBtnRE;
         private System.Windows.Forms.Button CopyBtnIM;
+        private System.Windows.Forms.TextBox TextBoxAnalityc;
+        private System.Windows.Forms.Button ClearBtnAnalityc;
+        private System.Windows.Forms.Button AnalyticSqrt;
+        private System.Windows.Forms.Button SinBtn;
+        private System.Windows.Forms.Button CosBtn;
+        private System.Windows.Forms.Button TanBtn;
+        private System.Windows.Forms.Button CotBtn;
+        private System.Windows.Forms.Button XBtn;
+        private System.Windows.Forms.Button Pow2Btn;
+        private System.Windows.Forms.Button BtnMinus;
+        private System.Windows.Forms.Button BtnPlus;
+        private System.Windows.Forms.Button BtnLeftBr;
+        private System.Windows.Forms.Button BtnRightBr;
+        private System.Windows.Forms.Button BtnMult;
+        private System.Windows.Forms.Button BtnDiv;
     }
 }
 

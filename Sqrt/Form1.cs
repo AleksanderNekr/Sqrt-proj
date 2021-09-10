@@ -111,5 +111,99 @@ namespace Sqrt
         {
             Clipboard.SetData(DataFormats.Text, textBoxIM.Text);
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "x";
+        }
+
+        private void SinBtn_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "Sin(x)";
+        }
+
+        private void ClearBtnAnalityc_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text = "";
+        }
+
+        private void CosBtn_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "Cos(x)";
+        }
+
+        private void TanBtn_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "Tan(x)";
+        }
+
+        private void CotBtn_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "Cot(x)";
+        }
+
+        private void Pow2Btn_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "²";
+        }
+
+        private void TextBoxAnalityc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void BtnPlus_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "+";
+        }
+
+        private void BtnMinus_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "-";
+        }
+
+        private void BtnLeftBr_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "(";
+        }
+
+        private void BtnRightBr_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += ")";
+        }
+
+        private void BtnMult_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "×";
+        }
+
+        private void BtnDiv_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text += "/";
+        }
+
+        private void AnalyticSqrt_Click(object sender, EventArgs e)
+        {
+            TextBoxAnalityc.Text = 
+                TextBoxAnalityc.Text == "(Sin(x))²"
+                ? "±Sin(x)"
+                : TextBoxAnalityc.Text == "(Cos(x))²"
+                ? "±Cos(x)"
+                : TextBoxAnalityc.Text == "(Tan(x))²"
+                ? "±Tan(x)"
+                : TextBoxAnalityc.Text == "(Cot(x))²"
+                ? "±Cot(x)"
+                : (TextBoxAnalityc.Text == "x²" || TextBoxAnalityc.Text == "(x)²")
+                ? "±x"
+                : TextBoxAnalityc.Text == "(Sin(x))²×(Cos(x))²" 
+                    || TextBoxAnalityc.Text == "(Sin(x)×Cos(x))²"
+                    || TextBoxAnalityc.Text == "(Cos(x)×(Sin(x))²"
+                    || TextBoxAnalityc.Text == "(Cos(x))²×(Sin(x))²"
+                    ? "Sin(x)×Cos(x)"
+                    : !TextBoxAnalityc.Text.Contains('√')
+                    ? $"√{TextBoxAnalityc.Text}"
+                    : TextBoxAnalityc.Text;
+        }
+
     }
 }
