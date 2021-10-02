@@ -1044,4 +1044,7 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="SquareRootProgram_BtnPlus_Click__" xml:space="preserve">
+	  <value>+</value>
+  </data>
 </root>

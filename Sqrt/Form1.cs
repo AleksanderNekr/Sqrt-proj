@@ -9,6 +9,7 @@ namespace Sqrt
     public partial class SquareRootProgram : Form
     {
         public string NumberText;
+
         public SquareRootProgram()
         {
             // Checking for the presence of a language group
@@ -26,7 +27,7 @@ namespace Sqrt
         private void Form1_Load(object sender, EventArgs e)
         {
             // Loading languages
-            comboBox1.DataSource = new CultureInfo[]
+            comboBox1.DataSource = new[]
             {
                 CultureInfo.GetCultureInfo("ru-RU"),
                 CultureInfo.GetCultureInfo("en-US"),
@@ -44,7 +45,7 @@ namespace Sqrt
             }
         }
 
-        // Saving language 
+        // Saving language
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Properties.Settings.Default.Language = comboBox1.SelectedValue.ToString();
@@ -83,15 +84,15 @@ namespace Sqrt
         }
 
         // Clear text buttons
-        private void ClearButtonRE_Click(object sender, EventArgs e) => textBoxRE.Text = "0";
+        private void ClearButtonRE_Click(object sender, EventArgs e) => textBoxRE.Text = @"0";
 
-        private void ClearButtonIM_Click(object sender, EventArgs e) => textBoxIM.Text = "0";
+        private void ClearButtonIM_Click(object sender, EventArgs e) => textBoxIM.Text = @"0";
 
         // Function that prevents "bad input":
         // only numbers are accepted as input,
         // it is possible to press the "Backspase" key,
         // and check for the number of separators (only 1)
-        public bool PreventBadText(string text, char key)
+        private bool PreventBadText(string text, char key)
         {
             return !(char.IsDigit(key) || key == 8 || !text.Contains('.') && key == '.');
         }
@@ -107,7 +108,7 @@ namespace Sqrt
         }
 
         // Function that reverses the sign of a number
-        public string ChangeSign(string text)
+        private string ChangeSign(string text)
         {
             return (-1 * double.Parse(text)).ToString($"F{DecPointDigitsCount.Text}");
         }
@@ -134,56 +135,57 @@ namespace Sqrt
         }
 
         // Functions adding operators for analytic roots
-        private void Button2_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "x";
+        private void Button2_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"x";
 
-        private void SinBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "Sin(x)";
+        private void SinBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"Sin(x)";
 
         private void ClearBtnAnalityc_Click(object sender, EventArgs e) => TextBoxAnalityc.Text = "";
 
-        private void CosBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "Cos(x)";
+        private void CosBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"Cos(x)";
 
-        private void TanBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "Tan(x)";
+        private void TanBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"Tan(x)";
 
-        private void CotBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "Cot(x)";
+        private void CotBtn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"Cot(x)";
 
-        private void Pow2Btn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "²";
+        private void Pow2Btn_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"²";
 
-        private void TextBoxAnalityc_KeyPress(object sender, KeyPressEventArgs e) => e.Handled = true;
+        /*
+                private void TextBoxAnalityc_KeyPress(object sender, KeyPressEventArgs e) => e.Handled = true;
+        */
 
-        private void BtnPlus_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "+";
+        private void BtnPlus_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"+";
 
-        private void BtnMinus_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "-";
+        private void BtnMinus_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"-";
 
-        private void BtnLeftBr_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "(";
+        private void BtnLeftBr_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"(";
 
-        private void BtnRightBr_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += ")";
+        private void BtnRightBr_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @")";
 
-        private void BtnMult_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "×";
+        private void BtnMult_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"×";
 
-        private void BtnDiv_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += "/";
+        private void BtnDiv_Click(object sender, EventArgs e) => TextBoxAnalityc.Text += @"/";
 
         private void AnalyticSqrt_Click(object sender, EventArgs e)
         {
-            TextBoxAnalityc.Text = 
-                TextBoxAnalityc.Text == "(Sin(x))²"
+            TextBoxAnalityc.Text =
+                TextBoxAnalityc.Text == @"(Sin(x))²"
                 ? "±Sin(x)"
-                : TextBoxAnalityc.Text == "(Cos(x))²"
+                : TextBoxAnalityc.Text == @"(Cos(x))²"
                 ? "±Cos(x)"
-                : TextBoxAnalityc.Text == "(Tan(x))²"
+                : TextBoxAnalityc.Text == @"(Tan(x))²"
                 ? "±Tan(x)"
-                : TextBoxAnalityc.Text == "(Cot(x))²"
+                : TextBoxAnalityc.Text == @"(Cot(x))²"
                 ? "±Cot(x)"
-                : (TextBoxAnalityc.Text == "x²" || TextBoxAnalityc.Text == "(x)²")
+                : (TextBoxAnalityc.Text == @"x²" || TextBoxAnalityc.Text == @"(x)²")
                 ? "±x"
-                : TextBoxAnalityc.Text == "(Sin(x))²×(Cos(x))²" 
-                    || TextBoxAnalityc.Text == "(Sin(x)×Cos(x))²"
-                    || TextBoxAnalityc.Text == "(Cos(x)×(Sin(x))²"
-                    || TextBoxAnalityc.Text == "(Cos(x))²×(Sin(x))²"
+                : TextBoxAnalityc.Text == @"(Sin(x))²×(Cos(x))²"
+                    || TextBoxAnalityc.Text == @"(Sin(x)×Cos(x))²"
+                    || TextBoxAnalityc.Text == @"(Cos(x)×(Sin(x))²"
+                    || TextBoxAnalityc.Text == @"(Cos(x))²×(Sin(x))²"
                     ? "Sin(x)×Cos(x)"
                     : !TextBoxAnalityc.Text.Contains('√')
                     ? $"√{TextBoxAnalityc.Text}"
                     : TextBoxAnalityc.Text;
         }
-
     }
 }
