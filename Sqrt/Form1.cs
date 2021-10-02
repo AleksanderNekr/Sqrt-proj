@@ -64,11 +64,11 @@ namespace Sqrt
             double ConvertTextbox(string text) => text == "" ? 0.0 : double.Parse(text);
 
             // Reading the real and complex parts of a number
-            double NumRE = ConvertTextbox(textBoxRE.Text);
-            double NumIM = ConvertTextbox(textBoxIM.Text);
+            double numRe = ConvertTextbox(textBoxRE.Text);
+            double numIm = ConvertTextbox(textBoxIM.Text);
 
             // Creating a complex number
-            Complex ComplexNum = new Complex(NumRE, NumIM);
+            Complex complexNum = new Complex(numRe, numIm);
 
             // Square root function and rounding a number
             string GetSqrt(double number)
@@ -78,8 +78,8 @@ namespace Sqrt
             }
 
             // Derivation of the real and complex parts of a number
-            textBoxRE.Text = GetSqrt(Complex.Sqrt(ComplexNum).Real);
-            textBoxIM.Text = GetSqrt(Complex.Sqrt(ComplexNum).Imaginary);
+            textBoxRE.Text = GetSqrt(Complex.Sqrt(complexNum).Real);
+            textBoxIM.Text = GetSqrt(Complex.Sqrt(complexNum).Imaginary);
         }
 
         // Clear text buttons
