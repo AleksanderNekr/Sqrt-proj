@@ -197,7 +197,7 @@ namespace Sqrt
             resources.ApplyResources(this.ClearBtnAnalityc, "ClearBtnAnalityc");
             this.ClearBtnAnalityc.Name = "ClearBtnAnalityc";
             this.ClearBtnAnalityc.UseVisualStyleBackColor = true;
-            this.ClearBtnAnalityc.Click += new System.EventHandler(this.ClearBtnAnalityc_Click);
+            this.ClearBtnAnalityc.Click += new System.EventHandler(this.ClearBtnAnalytic_Click);
             // 
             // AnalyticSqrt
             // 
